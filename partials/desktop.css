@@ -1,0 +1,275 @@
+@media screen and (min-width: 1025px) {
+  body header {
+    height: 78px;
+    /*.ham-but:hover .first-line {
+    	margin-left: 13%;
+    }
+    .ham-but:hover .third-line {
+    	margin-left: 13%;
+    }
+    .ham-but:hover .second-line {
+    	margin-left: 17%;
+    }*/ }
+    body header .logo {
+      width: 68px;
+      margin-top: 5px;
+      margin-left: 10%; }
+    body header .ham-but {
+      height: 53px;
+      width: 53px;
+      margin: 12.5px 10% 0 0;
+      border: 1px solid #fff;
+      border-radius: 50%; }
+      body header .ham-but .ham-lines {
+        margin: 18px auto 0 auto; }
+        body header .ham-but .ham-lines .ham-line {
+          width: 70%;
+          margin-left: 15%; }
+    body header .ham-but:hover {
+      cursor: pointer; }
+    body header .meni-letters {
+      font: 400 10px 'Open Sans', sans-serif;
+      color: #fff;
+      display: block;
+      float: right;
+      margin: 35px 5px 0 0; }
+  body .nav .usluge-show {
+    cursor: pointer; }
+  body .nav li:hover {
+    background-color: #1b252c; }
+  body .nav .proslave-show {
+    cursor: pointer; }
+  body .main-container {
+    /* ABOUT US */
+    /* CONTACT */
+    /* GALERIJA */
+    /*USLUGE CLASSE ZA EXTEND*/
+    /* VENCANJA*/
+    /* RODJENDANI*/
+    /* DOGADJAJI*/
+    /*BUKETI*/
+    /*BOX*/
+    /*BOX*/
+    /*USLUGE FOOTER*/ }
+    body .main-container .logo-landing {
+      width: 250px;
+      height: 250px; }
+    body .main-container .about-us .about-us-info {
+      width: 100%;
+      padding: 0 50px;
+      height: 500px; }
+      body .main-container .about-us .about-us-info .img-container {
+        width: 50%;
+        height: 375px;
+        padding: 50px 0 15px 0;
+        margin: 0 auto;
+        float: left;
+        text-align: center; }
+        body .main-container .about-us .about-us-info .img-container img {
+          width: 300px;
+          height: 375px;
+          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75); }
+      body .main-container .about-us .about-us-info .about-us-info-container {
+        width: 50%;
+        height: 325px;
+        margin: 0 0;
+        color: #000;
+        float: left;
+        padding: 100px 0 15px 0; }
+        body .main-container .about-us .about-us-info .about-us-info-container h1 {
+          font: 400 28px 'Open Sans', sans-serif;
+          width: 90%; }
+        body .main-container .about-us .about-us-info .about-us-info-container p {
+          font: 400 15px 'Open Sans', sans-serif;
+          padding-top: 12.75px;
+          width: 90%; }
+        body .main-container .about-us .about-us-info .about-us-info-container ul {
+          list-style: disc outside;
+          font: 400 15px 'Open Sans', sans-serif;
+          padding: 12.75px 0 70px 20px;
+          width: 90%; }
+    body .main-container .contact .contact-info {
+      width: 100%;
+      height: 500px;
+      padding: 0 50px; }
+      body .main-container .contact .contact-info .img-container {
+        width: 50%;
+        height: 375px;
+        padding: 50px 0 15px 0;
+        float: left;
+        margin: 0 0;
+        text-align: center; }
+        body .main-container .contact .contact-info .img-container img {
+          width: 300px;
+          height: 375px;
+          box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75); }
+      body .main-container .contact .contact-info .contact-main-line {
+        font: 400 28px 'Open Sans', sans-serif;
+        width: 40%;
+        margin-left: 0;
+        float: left;
+        padding-top: 100px; }
+      body .main-container .contact .contact-info .contact-text {
+        font: 600 15px 'Open Sans', sans-serif;
+        padding-top: 12.75px;
+        width: 40%;
+        margin-left: 0;
+        float: left;
+        padding-bottom: 50px; }
+    body .main-container .contact .dostava-prikazi-vise {
+      font: 600 15px 'Open Sans', sans-serif;
+      padding-top: 12.75px;
+      width: 90%;
+      margin: 30px 0 0 5%;
+      text-align: center;
+      cursor: pointer; }
+      body .main-container .contact .dostava-prikazi-vise img {
+        width: 15px; }
+    body .main-container .contact .dostava-vise {
+      font: 400 15px 'Open Sans', sans-serif;
+      padding-top: 12.75px;
+      width: 60%;
+      margin-left: 20%;
+      display: none; }
+    body .main-container .contact .contact-info-container {
+      width: 70%;
+      padding: 50px 0 50px 20%; }
+      body .main-container .contact .contact-info-container .cont-info {
+        width: 30%;
+        display: inline-block; }
+    body .main-container .galerija .galerija-slike .gal-img-container {
+      width: 19%;
+      height: 38.4vh; }
+    body .main-container .usluge-desktop, body .main-container .vencanja, body .main-container .rodjendani, body .main-container .dogadjaji, body .main-container .buketi, body .main-container .box {
+      width: 100%;
+      background-color: #162027;
+      text-align: center; }
+    body .main-container .usluge-head-desktop, body .main-container .vencanja .vencanja-head, body .main-container .rodjendani .rodjendani-head, body .main-container .dogadjaji .dogadjaji-head, body .main-container .buketi .buketi-head, body .main-container .box .box-head {
+      width: 100%;
+      background-color: #162027;
+      padding: 100px 0 10px 0; }
+      body .main-container .usluge-head-desktop img, body .main-container .vencanja .vencanja-head img, body .main-container .rodjendani .rodjendani-head img, body .main-container .dogadjaji .dogadjaji-head img, body .main-container .buketi .buketi-head img, body .main-container .box .box-head img {
+        width: 130px;
+        padding: 50px; }
+    body .main-container .usluge-img-container-desktop, body .main-container .vencanja .vencanja-head .img-container, body .main-container .rodjendani .rodjendani-head .img-container, body .main-container .dogadjaji .dogadjaji-head .img-container, body .main-container .buketi .buketi-head .img-container, body .main-container .box .box-head .img-container {
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      height: 400px; }
+      body .main-container .usluge-img-container-desktop h2, body .main-container .vencanja .vencanja-head .img-container h2, body .main-container .rodjendani .rodjendani-head .img-container h2, body .main-container .dogadjaji .dogadjaji-head .img-container h2, body .main-container .buketi .buketi-head .img-container h2, body .main-container .box .box-head .img-container h2 {
+        font: 500 40px 'Open Sans', sans-serif;
+        color: #fff;
+        padding-top: 150px; }
+      body .main-container .usluge-img-container-desktop img, body .main-container .vencanja .vencanja-head .img-container img, body .main-container .rodjendani .rodjendani-head .img-container img, body .main-container .dogadjaji .dogadjaji-head .img-container img, body .main-container .buketi .buketi-head .img-container img, body .main-container .box .box-head .img-container img {
+        width: 80px;
+        padding: 10px; }
+    body .main-container .usluge-info-desktop, body .main-container .vencanja .vencanja-info, body .main-container .rodjendani .rodjendani-info, body .main-container .dogadjaji .dogadjaji-info, body .main-container .buketi .buketi-info, body .main-container .box .box-info {
+      width: 60%;
+      background-color: #162027;
+      text-align: left;
+      color: #fff;
+      margin: 0 auto;
+      padding-bottom: 80px; }
+      body .main-container .usluge-info-desktop h5, body .main-container .vencanja .vencanja-info h5, body .main-container .rodjendani .rodjendani-info h5, body .main-container .dogadjaji .dogadjaji-info h5, body .main-container .buketi .buketi-info h5, body .main-container .box .box-info h5 {
+        font: 400 20px 'Open Sans', sans-serif;
+        margin-left: 10px; }
+      body .main-container .usluge-info-desktop p, body .main-container .vencanja .vencanja-info p, body .main-container .rodjendani .rodjendani-info p, body .main-container .dogadjaji .dogadjaji-info p, body .main-container .buketi .buketi-info p, body .main-container .box .box-info p {
+        font: 400 16px 'Open Sans', sans-serif; }
+    body .main-container .usluge-slike-desktop, body .main-container .vencanja .vencanja-slike, body .main-container .rodjendani .rodjendani-slike, body .main-container .dogadjaji .dogadjaji-slike, body .main-container .buketi .buketi-slike, body .main-container .box .box-slike {
+      width: 96%;
+      background-color: #fff;
+      padding: 20px 2% 20px 2%; }
+    body .main-container .usluge-gal-img-container-desktop, body .main-container .vencanja .vencanja-slike .ven-img-main-container, body .main-container .vencanja .vencanja-slike .ven-img-main-container .ven-img-container, body .main-container .rodjendani .rodjendani-slike .rodj-img-main-container, body .main-container .rodjendani .rodjendani-slike .rodj-img-main-container .rodj-img-container, body .main-container .dogadjaji .dogadjaji-slike .dog-img-main-container, body .main-container .buketi .buketi-slike .buketi-con .buk-img-main-container, body .main-container .buketi .buketi-slike .buketi-con .buk-img-main-container .buk-img-container, body .main-container .box .box-slike .box-con .box-img-main-container, body .main-container .box .box-slike .box-con .box-img-main-container .box-img-container {
+      width: 19%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      display: inline-block;
+      margin-bottom: 10px;
+      overflow-x: hidden;
+      overflow-y: hidden; }
+    body .main-container .vencanja .vencanja-head .img-container {
+      background-image: url(../img/ven-desktop.jpg); }
+    body .main-container .vencanja .vencanja-slike .ven-img-main-container .ven-img-container {
+      width: 100%;
+      height: 100%; }
+    body .main-container .rodjendani .rodjendani-head .img-container {
+      background-image: url(../img/rodj-desktop.jpg); }
+    body .main-container .rodjendani .rodjendani-slike .rodj-img-main-container .rodj-img-container {
+      width: 100%;
+      height: 100%; }
+    body .main-container .dogadjaji .dogadjaji-head .img-container {
+      background-image: url(../img/dog-desktop.jpg); }
+    body .main-container .dogadjaji .dogadjaji-slike .dog-img-main-container .dog-img-container {
+      width: 100%;
+      height: 100%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      display: inline-block;
+      margin-bottom: 10px;
+      overflow-x: hidden;
+      overflow-y: hidden; }
+    body .main-container .buketi .buketi-head .img-container {
+      background-image: url(../img/buk-desktop.jpg); }
+    body .main-container .buketi .buketi-slike .buketi-con {
+      width: 19%;
+      display: inline-block; }
+      body .main-container .buketi .buketi-slike .buketi-con .buk-img-main-container {
+        width: 100%; }
+        body .main-container .buketi .buketi-slike .buketi-con .buk-img-main-container p {
+          font: 600 15px 'Open Sans', sans-serif;
+          color: #000;
+          margin-bottom: 30px; }
+        body .main-container .buketi .buketi-slike .buketi-con .buk-img-main-container .buk-img-container {
+          width: 100%;
+          height: 100%; }
+    body .main-container .box .box-head .img-container {
+      background-image: url(../img/box.jpg); }
+    body .main-container .box .box-slike .box-con {
+      width: 19%;
+      display: inline-block; }
+      body .main-container .box .box-slike .box-con .box-img-main-container {
+        width: 100%; }
+        body .main-container .box .box-slike .box-con .box-img-main-container p {
+          font: 600 15px 'Open Sans', sans-serif;
+          color: #000;
+          margin-bottom: 30px; }
+        body .main-container .box .box-slike .box-con .box-img-main-container .box-img-container {
+          width: 100%;
+          height: 100%; }
+    body .main-container .template-footer {
+      width: 80%;
+      padding: 40px 10%;
+      border-top: 1px solid #162027;
+      background-color: #fff;
+      text-align: center; }
+      body .main-container .template-footer .foot-cont-info {
+        width: 100%; }
+        body .main-container .template-footer .foot-cont-info .foot-info {
+          padding-top: 20px;
+          padding-left: 20px;
+          display: inline-block; }
+          body .main-container .template-footer .foot-cont-info .foot-info img {
+            width: 20px; }
+          body .main-container .template-footer .foot-cont-info .foot-info span {
+            font: 600 13px 'Open Sans', sans-serif;
+            color: #000;
+            padding-left: 10px; }
+      body .main-container .template-footer .social-in-template {
+        width: 80px;
+        padding-top: 40px;
+        margin: 0 auto; }
+        body .main-container .template-footer .social-in-template a {
+          width: 20px;
+          display: inline-block; }
+          body .main-container .template-footer .social-in-template a img {
+            width: 20px; }
+        body .main-container .template-footer .social-in-template a:last-child {
+          margin-left: 25px; }
+      body .main-container .template-footer p {
+        font: 600 16px 'Open Sans', sans-serif;
+        color: #000;
+        padding: 25px 0 40px 0; } }
+
+/*# sourceMappingURL=desktop.css.map */
