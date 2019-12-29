@@ -10,12 +10,48 @@ body {
     height: 100vh;
     background-color: #000;
     color: #fff; }
-    body .first-page .head-line h1 {
-      font: 400 40px 'Oleo Script Swash Caps', cursive;
-      margin-left: 5%; }
-    body .first-page .head-line h5 {
-      font: 600 20px 'Roboto', sans-serif;
-      margin-left: 10%; }
+    body .first-page .heading {
+      height: 100px;
+      background-image: linear-gradient(180deg, rgba(191, 166, 17, 0.5) 20%, rgba(191, 166, 17, 0.3) 60%, rgba(191, 166, 17, 0) 100%); }
+      body .first-page .heading h1 {
+        font: 400 40px 'Oleo Script Swash Caps', cursive;
+        margin-left: 5%;
+        float: left; }
+      body .first-page .heading h5 {
+        font: 600 20px 'Roboto', sans-serif;
+        margin-left: 10%;
+        float: left; }
+      body .first-page .heading .ham-but {
+        height: 15px;
+        width: 27px;
+        margin: 23.5px 15px 0 0;
+        float: right;
+        transition: 0.3s; }
+        body .first-page .heading .ham-but .ham-line {
+          width: 100%;
+          height: 1px;
+          background-color: #fff;
+          transition: 0.1s;
+          position: relative; }
+        body .first-page .heading .ham-but .second-line {
+          top: 7px; }
+        body .first-page .heading .ham-but .third-line {
+          top: 14px; }
+        body .first-page .heading .ham-but .change1 {
+          top: 8px;
+          transform: rotate(45deg); }
+        body .first-page .heading .ham-but .change2 {
+          transform: rotate(-45deg);
+          top: 7px; }
+    body .first-page .nav-bar {
+      width: 50%;
+      /*background-color: red;*/ }
+      body .first-page .nav-bar .nav-line {
+        height: 30px;
+        width: 90%;
+        font: 600 20px 'Roboto', sans-serif;
+        margin: 25px 0 0 10%;
+        /*background-color: brown;*/ }
     body .first-page .vm {
       background: url("../img/background-mobile3.png");
       background-size: cover;
