@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Caveat&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Roboto&display=swap);
 body {
   width: 100%;
@@ -11,19 +11,21 @@ body {
     background-color: #191919;
     color: #fff; }
     body .first-page .heading {
-      height: 12%;
-      background-color: #191919; }
+      height: 12%; }
       body .first-page .heading .heading-logo {
         width: 12%;
         float: left;
         margin: 2.5%; }
       body .first-page .heading h1 {
-        font: 400 2rem 'Oleo Script Swash Caps', cursive;
+        font: 400 2rem 'Caveat', cursive;
         float: left;
-        margin: 2.5% 2.5% 0 2.5%; }
+        margin: 0 2.5% 0 2.5%;
+        color: #fff; }
       body .first-page .heading h5 {
-        font: 600 1rem 'Roboto', sans-serif;
-        float: left; }
+        font: 400 1rem 'Roboto', sans-serif;
+        color: #fff;
+        float: left;
+        margin-top: -1%; }
       body .first-page .heading .ham-but {
         height: 15px;
         width: 27px;
@@ -36,10 +38,14 @@ body {
           background-color: #fff;
           transition: 0.1s;
           position: relative; }
+        body .first-page .heading .ham-but .first-line {
+          background-color: #69C9CF; }
         body .first-page .heading .ham-but .second-line {
-          top: 7px; }
+          top: 7px;
+          background-color: #ED2052; }
         body .first-page .heading .ham-but .third-line {
-          top: 14px; }
+          top: 14px;
+          background-color: #69C9CF; }
         body .first-page .heading .ham-but .change1 {
           top: 8px;
           transform: rotate(45deg); }
@@ -61,13 +67,15 @@ body {
       background-size: cover;
       position: absolute;
       bottom: 20%;
-      animation: opacity 2s ease-in;
+      animation: opacity 4s infinite;
       opacity: 20%; }
 @keyframes opacity {
-  from {
-    opacity: 0%; }
-  to {
-    opacity: 20%; } }
+  0% {
+    opacity: 2%; }
+  50% {
+    opacity: 20%; }
+  100% {
+    opacity: 2%; } }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   body header {
     height: 100px; }
