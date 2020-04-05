@@ -1,4 +1,4 @@
-var myImage = document.getElementById("vm");
+var bckLogo = document.getElementById("vm");
 var cliWid = document.body.clientWidth;
 var hamBut = document.getElementById("ham-but");
 var firLin = document.getElementById("first-line");
@@ -9,9 +9,9 @@ var thiLin = document.getElementById("third-line");
 
 
 //set image on home page size
-myImage.style.height = cliWid / 1.1 + "px";
-myImage.style.width = cliWid / 1.1 + "px";
-
+bckLogo.style.height = cliWid / 1.5 + "px";
+bckLogo.style.width = cliWid / 1.5 + "px";
+bckLogo.style.marginLeft = (cliWid-(cliWid / 1.5))/2 + "px";
 
 
 function navClose () {
@@ -45,5 +45,5 @@ hamBut.onclick = () => {
 
 console.log(cliWid);
 
-console.log(cliWid / 1.1);
+console.log((cliWid-(cliWid / 1.5))/2);
 

@@ -1,24 +1,29 @@
 body  {
 	width: 100%;
 	height: 100%;
-	background-color: #000;
-	overflow-x: hidden; 
+	background-color: #191919;
+	overflow: hidden; 
 	.first-page {
 		width: 100%;
 		height: 100vh;
-		background-color: #000;
+		background-color: #191919;
 		color: #fff;
+
 		.heading {
-			height: 100px;
-			background-image: $headLine;
-			h1 {
-				font: 400 40px 'Oleo Script Swash Caps', cursive;
-				margin-left: 5%;
+			height: 12%;
+			background-color: #191919;
+			.heading-logo {
+				width: 12%;
 				float: left;
+				margin: 2.5%;
+			}
+			h1 {
+				font: 400 2rem 'Oleo Script Swash Caps', cursive;
+				float: left;
+				margin: 2.5% 2.5% 0 2.5%;
 			}
 			h5 {
-				font: 600 20px 'Roboto', sans-serif;
-				margin-left: 10%;
+				font: 600 1rem 'Roboto', sans-serif;
 				float: left;
 			}
 			.ham-but {
@@ -52,28 +57,23 @@ body  {
 			}
 		}
 		.nav-bar {
-			width: 50%;
-			/*background-color: red;*/
+			width: 100px;
+			float: right;
+			display: none;
 			.nav-line {
 				height: 30px;
 				width: 90%;
 				font: 600 20px 'Roboto', sans-serif;
-				margin: 25px 0 0 10%;
+				margin: 25px 0 0 0;
 				/*background-color: brown;*/
 			}
 		}
 		.vm {
-			background: url("../img/background-mobile3.png");
+			background: url("../img/logo-black-256.png");
 			background-size: cover;
 			position: absolute;
-			bottom: 0;
-			right: 0;
+			bottom: 20%;
+			opacity: 20%;
 		}
-	}
-	.second-page {
-		width: 100%;
-		height: 100vh;
-		background-color: red;
-		color: white;
 	}
 }
