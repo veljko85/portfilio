@@ -73,7 +73,12 @@ body  {
 			background-size: cover;
 			position: absolute;
 			bottom: 20%;
+			animation: opacity 2s ease-in;
 			opacity: 20%;
+		}
+		@keyframes opacity {
+			from {opacity: 0%;}
+			to {opacity: 20%;}
 		}
 	}
 }
