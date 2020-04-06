@@ -61,8 +61,15 @@ body {
       font: 400 3rem 'Do Hyeon', sans-serif;
       color: #fff;
       margin: 30% 0 0 5%; }
-    body .first-page .flashing {
-      animation: flashing 1s infinite; }
+      body .first-page .home-page-heading .velibor {
+        color: #ED2052; }
+      body .first-page .home-page-heading .markovic {
+        color: #00cc00; }
+      body .first-page .home-page-heading .web-developer {
+        color: #69C9CF; }
+      body .first-page .home-page-heading .flashing {
+        animation: flashing 1s infinite;
+        float: left; }
 @keyframes flashing {
   0% {
     opacity: 0%; }

@@ -73,16 +73,26 @@ body  {
 			font: 400 3rem 'Do Hyeon', sans-serif;
 			color: #fff;
 			margin: 30% 0 0 5%;
+			.velibor {
+				color: #ED2052;
+			}
+			.markovic {
+				color: #00cc00;
+			}
+			.web-developer {
+				color: #69C9CF;
+			}
+			.flashing {
+				animation: flashing 1s infinite;
+				float: left;
+			}
+			@keyframes flashing {
+				0% {opacity: 0%;}
+				50% {opacity: 100%;}
+				100% {opacity: 0%;}
+			}
 		}
-		.flashing {
-			animation: flashing 1s infinite;
-			float: left;
-		}
-		@keyframes flashing {
-			0% {opacity: 0%;}
-			50% {opacity: 100%;}
-			100% {opacity: 0%;}
-		}
+		
 		.vm {
 			background: url("../img/logo-black-256.png");
 			background-size: cover;
