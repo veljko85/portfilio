@@ -19,14 +19,8 @@ body  {
 			h1 {
 				font: 400 2rem 'Caveat', cursive;
 				float: left;
-				margin: 0 2.5% 0 2.5%;
+				margin: 3% 2.5% 0 2.5%;
 				color: #fff;
-			}
-			h5 {
-				font: 400 1rem 'Roboto', sans-serif;
-				color: #fff;
-				float: left;
-				margin-top: -1%;
 			}
 			.ham-but {
 				height: 15px;
@@ -74,6 +68,20 @@ body  {
 				margin: 25px 0 0 0;
 				/*background-color: brown;*/
 			}
+		}
+		.home-page-heading {
+			font: 400 3rem 'Do Hyeon', sans-serif;
+			color: #fff;
+			margin: 30% 0 0 5%;
+		}
+		.flashing {
+			animation: flashing 1s infinite;
+			float: left;
+		}
+		@keyframes flashing {
+			0% {opacity: 0%;}
+			50% {opacity: 100%;}
+			100% {opacity: 0%;}
 		}
 		.vm {
 			background: url("../img/logo-black-256.png");

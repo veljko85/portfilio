@@ -17,13 +17,8 @@ body {
       body .first-page .heading h1 {
         font: 400 2rem 'Caveat', cursive;
         float: left;
-        margin: 0 2.5% 0 2.5%;
+        margin: 3% 2.5% 0 2.5%;
         color: #fff; }
-      body .first-page .heading h5 {
-        font: 400 1rem 'Roboto', sans-serif;
-        color: #fff;
-        float: left;
-        margin-top: -1%; }
       body .first-page .heading .ham-but {
         height: 15px;
         width: 27px;
@@ -60,6 +55,20 @@ body {
         font: 600 20px 'Roboto', sans-serif;
         margin: 25px 0 0 0;
         /*background-color: brown;*/ }
+    body .first-page .home-page-heading {
+      font: 400 3rem 'Do Hyeon', sans-serif;
+      color: #fff;
+      margin: 30% 0 0 5%; }
+    body .first-page .flashing {
+      animation: flashing 1s infinite;
+      float: left; }
+@keyframes flashing {
+  0% {
+    opacity: 0%; }
+  50% {
+    opacity: 100%; }
+  100% {
+    opacity: 0%; } }
     body .first-page .vm {
       background: url("../img/logo-black-256.png");
       background-size: cover;
