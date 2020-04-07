@@ -69,22 +69,29 @@ body  {
 				/*background-color: brown;*/
 			}
 		}
+		
+/*home page letters*/
+
 		.home-page-heading {
-			font: 400 3rem 'Do Hyeon', sans-serif;
 			color: #fff;
 			margin: 30% 0 0 5%;
-			.velibor {
-				color: #ED2052;
+			.name {
+				display: none;
+				font: 400 3rem 'Do Hyeon', sans-serif;
 			}
-			.markovic {
-				color: #00cc00;
+
+			.last-name {
+				display: none;
+				font: 400 3rem 'Do Hyeon', sans-serif;
 			}
+
 			.web-developer {
-				color: #69C9CF;
+				display: none;
+				font: 400 2rem 'Do Hyeon', sans-serif;
 			}
 			.flashing {
 				animation: flashing 1s infinite;
-				float: left;
+				font: 400 3rem 'Do Hyeon', sans-serif;
 			}
 			@keyframes flashing {
 				0% {opacity: 0%;}

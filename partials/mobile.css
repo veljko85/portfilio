@@ -7,7 +7,8 @@ body {
     width: 100%;
     height: 100vh;
     background-color: #191919;
-    color: #fff; }
+    color: #fff;
+    /*home page letters*/ }
     body .first-page .heading {
       height: 12%; }
       body .first-page .heading .heading-logo {
@@ -56,18 +57,20 @@ body {
         margin: 25px 0 0 0;
         /*background-color: brown;*/ }
     body .first-page .home-page-heading {
-      font: 400 3rem 'Do Hyeon', sans-serif;
       color: #fff;
       margin: 30% 0 0 5%; }
-      body .first-page .home-page-heading .velibor {
-        color: #ED2052; }
-      body .first-page .home-page-heading .markovic {
-        color: #00cc00; }
+      body .first-page .home-page-heading .name {
+        display: none;
+        font: 400 3rem 'Do Hyeon', sans-serif; }
+      body .first-page .home-page-heading .last-name {
+        display: none;
+        font: 400 3rem 'Do Hyeon', sans-serif; }
       body .first-page .home-page-heading .web-developer {
-        color: #69C9CF; }
+        display: none;
+        font: 400 2rem 'Do Hyeon', sans-serif; }
       body .first-page .home-page-heading .flashing {
         animation: flashing 1s infinite;
-        float: left; }
+        font: 400 3rem 'Do Hyeon', sans-serif; }
 @keyframes flashing {
   0% {
     opacity: 0%; }
