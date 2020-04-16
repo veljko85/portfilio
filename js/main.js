@@ -4,6 +4,8 @@ var hamBut = document.getElementById("ham-but");
 var firLin = document.getElementById("first-line");
 var secLin = document.getElementById("second-line");
 var thiLin = document.getElementById("third-line");
+var content = document.getElementById("content");
+
 
 
 
@@ -14,16 +16,57 @@ bckLogo.style.width = cliWid / 1.5 + "px";
 bckLogo.style.marginLeft = (cliWid-(cliWid / 1.5))/2 + "px";
 
 //navigatin bar open and close
+
+var navLine = document.getElementsByClassName("nav-line");
+var navBar = document.getElementById("nav-bar");
+
 function navClose () {
 		firLin.classList.remove("change1");
 		secLin.style.display = "block";
 		thiLin.classList.remove("change2");
+
+		navBar.style.width = 0;
+		for (var i = 0; i < navLine.length; i++) {
+			navLine[i].children[0].style.transition = "0s";
+			navLine[i].children[0].style.opacity = 0;
+			navLine[i].children[1].style.opacity = 0;
+			navLine[i].children[0].style.display = "inline-block";
+			navLine[i].children[1].style.display = "none";
+		}
 }
+		
+
+
 
 function navOpen () {
 	firLin.classList.add("change1");
 	secLin.style.display = "none";
 	thiLin.classList.add("change2");
+
+
+
+
+	navBar.style.width = 100 + "%";
+	for (var i = 0; i < navLine.length; i++) {
+
+
+		navLine[i].children[0].style.transition = "0.3s";
+		navLine[i].children[1].style.transition = "0.3s";
+		setTimeout('navLine[0].children[0].style.opacity = 1;', 300);
+		setTimeout('navLine[1].children[0].style.opacity = 1;', 300);
+		setTimeout('navLine[2].children[0].style.opacity = 1;', 300);
+		setTimeout('navLine[3].children[0].style.opacity = 1;', 300);
+		setTimeout('navLine[4].children[0].style.opacity = 1;', 300);
+
+		setTimeout('navLine[0].children[1].style.opacity = 1;', 300);
+		setTimeout('navLine[1].children[1].style.opacity = 1;', 300);
+		setTimeout('navLine[2].children[1].style.opacity = 1;', 300);
+		setTimeout('navLine[3].children[1].style.opacity = 1;', 300);
+		setTimeout('navLine[4].children[1].style.opacity = 1;', 300);
+	}
+
+
+
 }
 
 
@@ -34,14 +77,14 @@ hamBut.onclick = () => {
 			navClose();
 
 		}	else	{
+			navBar.style.transition = "0.3s";
 			navOpen();
 		}
 }
 
-
 //home page velibor markovic animation
 
-var homePage = document.getElementsByClassName("home-page-heading");
+
 var myName = document.getElementsByClassName("name");
 var lastName = document.getElementsByClassName("last-name");
 var webDeveloper = document.getElementsByClassName("web-developer");
@@ -82,7 +125,7 @@ for (var i = 0; i < lastName.length; i++) {
 	setTimeout('lastName[6].style.display = "inline";', 3600);
 	setTimeout('lastName[7].style.display = "inline";', 3700);
 	setTimeout('lastName[8].style.display = "inline";', 3800);
-	setTimeout('lastName[9].style.display = "inline";', 3900);
+	setTimeout('lastName[9].style.display = "inline";', 4000);
 }
 
 setTimeout('secBrake.insertAdjacentHTML("afterend", "<br>");', 4600);
@@ -111,10 +154,83 @@ for (var i = 0; i < webDeveloper.length; i++) {
 	setTimeout('webDeveloper[14].style.display = "inline";', 6500);
 }
 
-setTimeout('thiBrake.insertAdjacentHTML("afterend", "<br>");', 7000);
 
 
-console.log(homePage[0]);
 
-console.log(lastName[0]);
+
+//nav bar change on clicks
+for (var i = 0; i < navLine.length; i++) {
+	navLine[i].addEventListener("click", function() {
+
+		var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				document.getElementById("content").innerHTML =
+				this.responseText;
+							    }
+			};
+		xhttp.open("GET", "html/" + this.id + ".html", true);
+		xhttp.send();
+
+		switch (this.id) {
+			case "about":
+				this.children[0].style.display = "none";
+				this.children[1].style.display = "inline-block";
+				document.getElementById("skills").children[0].style.display = "inline-block";
+				document.getElementById("my-work").children[0].style.display = "inline-block";
+				document.getElementById("contact").children[0].style.display = "inline-block";
+				document.getElementById("skills").children[1].style.display = "none";
+				document.getElementById("my-work").children[1].style.display = "none";
+				document.getElementById("contact").children[1].style.display = "none";
+			break;
+			case "skills":
+				this.children[0].style.display = "none";
+				this.children[1].style.display = "inline-block";
+				document.getElementById("about").children[0].style.display = "inline-block";
+				document.getElementById("my-work").children[0].style.display = "inline-block";
+				document.getElementById("contact").children[0].style.display = "inline-block";
+				document.getElementById("about").children[1].style.display = "none";
+				document.getElementById("my-work").children[1].style.display = "none";
+				document.getElementById("contact").children[1].style.display = "none";
+			break;
+			case "my-work":
+				this.children[0].style.display = "none";
+				this.children[1].style.display = "inline-block";
+				document.getElementById("skills").children[0].style.display = "inline-block";
+				document.getElementById("about").children[0].style.display = "inline-block";
+				document.getElementById("contact").children[0].style.display = "inline-block";
+				document.getElementById("about").children[1].style.display = "none";
+				document.getElementById("skills").children[1].style.display = "none";
+				document.getElementById("contact").children[1].style.display = "none";
+			break;
+			case "contact":
+				this.children[0].style.display = "none";
+				this.children[1].style.display = "inline-block";
+				document.getElementById("skills").children[0].style.display = "inline-block";
+				document.getElementById("my-work").children[0].style.display = "inline-block";
+				document.getElementById("about").children[0].style.display = "inline-block";
+				document.getElementById("about").children[1].style.display = "none";
+				document.getElementById("skills").children[1].style.display = "none";
+				document.getElementById("my-work").children[1].style.display = "none";
+			break;
+			default:
+				document.getElementById("about").children[0].style.display = "inline-block";
+				document.getElementById("skills").children[0].style.display = "inline-block";
+				document.getElementById("my-work").children[0].style.display = "inline-block";
+				document.getElementById("contact").children[0].style.display = "inline-block";
+				document.getElementById("about").children[1].style.display = "none";
+				document.getElementById("skills").children[1].style.display = "none";
+				document.getElementById("my-work").children[1].style.display = "none";
+				document.getElementById("contact").children[1].style.display = "none";
+				}
+		});
+
+}
+
+
+
+
+
+
+
 
