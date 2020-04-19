@@ -10,10 +10,14 @@ var content = document.getElementById("content");
 
 
 
+
 //set image on home page size
 bckLogo.style.height = cliWid / 1.5 + "px";
 bckLogo.style.width = cliWid / 1.5 + "px";
 bckLogo.style.marginLeft = (cliWid-(cliWid / 1.5))/2 + "px";
+
+
+
 
 //navigatin bar open and close
 
@@ -93,7 +97,7 @@ var secBrake = document.getElementById("curly-brace");
 var thiBrake = document.getElementById("bracket-2");
 
 
-for (var i = 0; i < myName.length; i++) {
+/*for (var i = 0; i < myName.length; i++) {
 
 	setTimeout('myName[0].style.display = "inline";', 1000);
 	setTimeout('myName[1].style.display = "inline";', 1100);
@@ -152,7 +156,7 @@ for (var i = 0; i < webDeveloper.length; i++) {
 	setTimeout('webDeveloper[12].style.display = "inline";', 6300);
 	setTimeout('webDeveloper[13].style.display = "inline";', 6400);
 	setTimeout('webDeveloper[14].style.display = "inline";', 6500);
-}
+}*/
 
 
 
@@ -171,6 +175,38 @@ for (var i = 0; i < navLine.length; i++) {
 			};
 		xhttp.open("GET", "html/" + this.id + ".html", true);
 		xhttp.send();
+
+
+			
+
+		if (this.id == "about") {
+
+			setTimeout('var aboutPage = document.getElementById("about-page");', 100);
+
+			setTimeout('aboutPage.children[3].style.width = cliWid * 0.8 + "px";', 100);
+			setTimeout('aboutPage.children[3].style.height = cliWid * 0.8 + "px";', 100);
+			
+			setTimeout('aboutPage.children[0].style.marginLeft = "5%";', 100);
+			setTimeout('aboutPage.children[1].style.marginLeft = "15%";', 300);
+			setTimeout('aboutPage.children[2].style.marginLeft = "5%";', 500);
+			setTimeout('aboutPage.children[3].style.right = 0;', 700);
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		switch (this.id) {
 			case "about":

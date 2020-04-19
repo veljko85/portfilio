@@ -65,7 +65,6 @@ body {
     body .container .nav-bar {
       width: 0;
       height: 7%;
-      /*display: none;*/
       background-color: #181818;
       float: right;
       overflow: hidden; }
@@ -79,12 +78,14 @@ body {
           opacity: 0;
           /*display: none;*/ }
         body .container .nav-bar .nav-line h1 {
-          font: 400 0.6rem 'Do Hyeon', sans-serif;
+          font: 400 0.7rem 'Do Hyeon', sans-serif;
           display: none;
           color: #69C9CF;
           opacity: 0; }
     body .container .content {
-      color: #fff; }
+      color: #fff;
+      /*lasnding page content*/
+      /*about page content*/ }
       body .container .content .home-page-content {
         top: 50%;
         left: 5%;
@@ -108,5 +109,27 @@ body {
     opacity: 100%; }
   100% {
     opacity: 0%; } }
+      body .container .content .about-page {
+        width: 100%; }
+        body .container .content .about-page .about-first-paragraph, body .container .content .about-page .about-second-paragraph, body .container .content .about-page .about-third-paragraph {
+          width: 80%;
+          font: 200 1.1rem 'Do Hyeon', sans-serif;
+          text-shadow: -8px 5px 1px #000; }
+        body .container .content .about-page .about-first-paragraph {
+          margin: 20% 0 0 -80%;
+          transition: 1s; }
+        body .container .content .about-page .about-second-paragraph {
+          margin: 7% 0 0 100%;
+          transition: 1s; }
+        body .container .content .about-page .about-third-paragraph {
+          margin: 7% 0 0 -80%;
+          transition: 1s; }
+        body .container .content .about-page .about-my-image {
+          position: absolute;
+          bottom: 0;
+          right: -80%;
+          transition: 1s;
+          background: url("../img/myimagemedium.png");
+          background-size: cover; }
 
 /*# sourceMappingURL=mobile.css.map */
