@@ -62,7 +62,7 @@ body  {
 			background: url("../img/logo-black-256.png");
 			background-size: cover;
 			position: absolute;
-			bottom: 30%;
+			bottom: 18%;
 			animation: opacity 4s infinite;
 			opacity: 20%;
 		}
@@ -88,12 +88,6 @@ body  {
 					opacity: 0;	
 					/*display: none;*/
 				}
-				h1 {
-					font: 400 0.7rem 'Do Hyeon', sans-serif;
-					display: none;
-					color: #69C9CF;
-					opacity: 0;
-				}
 			}
 		}
 
@@ -112,14 +106,23 @@ body  {
 					display: none;
 					font: 400 3rem 'Do Hyeon', sans-serif;
 				}
+				.name-2 {
+					font: 400 3rem 'Do Hyeon', sans-serif;
+				}
 
 				.last-name {
 					display: none;
 					font: 400 3rem 'Do Hyeon', sans-serif;
 				}
+				.last-name-2 {
+					font: 400 3rem 'Do Hyeon', sans-serif;
+				}
 
 				.web-developer {
 					display: none;
+					font: 400 2rem 'Do Hyeon', sans-serif;
+				}
+				.web-developer-2 {
 					font: 400 2rem 'Do Hyeon', sans-serif;
 				}
 				.flashing {
@@ -132,16 +135,26 @@ body  {
 					100% {opacity: 0%;}
 				}
 			}
+
+			.page-title {
+				font: 200 2rem 'Do Hyeon', sans-serif;
+				margin: 15% 0 0 5%;
+				color: #69C9CF;
+				opacity: 1;
+				transition: 0.5s;
+			}
+
 			/*about page content*/
 			.about-page {
 				width: 100%;
+
 				.about-first-paragraph, .about-second-paragraph, .about-third-paragraph {
 					width: 80%;
 					font: 200 1.1rem 'Do Hyeon', sans-serif;
-					text-shadow: -8px 5px 1px #000;
+					/*text-shadow: -8px 5px 1px #000;*/
 				}
 				.about-first-paragraph {
-					margin: 20% 0 0 -80%;
+					margin: 7% 0 0 -80%;
 					transition: 1s;
 				}
 				.about-second-paragraph {

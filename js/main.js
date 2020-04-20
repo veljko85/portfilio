@@ -12,9 +12,9 @@ var content = document.getElementById("content");
 
 
 //set image on home page size
-bckLogo.style.height = cliWid / 1.5 + "px";
-bckLogo.style.width = cliWid / 1.5 + "px";
-bckLogo.style.marginLeft = (cliWid-(cliWid / 1.5))/2 + "px";
+bckLogo.style.height = cliWid + "px";
+bckLogo.style.width = cliWid + "px";
+//bckLogo.style.marginLeft = (cliWid-(cliWid / 1.5))/2 + "px";
 
 
 
@@ -33,9 +33,7 @@ function navClose () {
 		for (var i = 0; i < navLine.length; i++) {
 			navLine[i].children[0].style.transition = "0s";
 			navLine[i].children[0].style.opacity = 0;
-			navLine[i].children[1].style.opacity = 0;
 			navLine[i].children[0].style.display = "inline-block";
-			navLine[i].children[1].style.display = "none";
 		}
 }
 		
@@ -55,19 +53,15 @@ function navOpen () {
 
 
 		navLine[i].children[0].style.transition = "0.3s";
-		navLine[i].children[1].style.transition = "0.3s";
 		setTimeout('navLine[0].children[0].style.opacity = 1;', 300);
 		setTimeout('navLine[1].children[0].style.opacity = 1;', 300);
 		setTimeout('navLine[2].children[0].style.opacity = 1;', 300);
 		setTimeout('navLine[3].children[0].style.opacity = 1;', 300);
 		setTimeout('navLine[4].children[0].style.opacity = 1;', 300);
 
-		setTimeout('navLine[0].children[1].style.opacity = 1;', 300);
-		setTimeout('navLine[1].children[1].style.opacity = 1;', 300);
-		setTimeout('navLine[2].children[1].style.opacity = 1;', 300);
-		setTimeout('navLine[3].children[1].style.opacity = 1;', 300);
-		setTimeout('navLine[4].children[1].style.opacity = 1;', 300);
 	}
+
+	
 
 
 
@@ -95,7 +89,6 @@ var webDeveloper = document.getElementsByClassName("web-developer");
 var firBrake = document.getElementById("greater-than");
 var secBrake = document.getElementById("curly-brace");
 var thiBrake = document.getElementById("bracket-2");
-
 
 /*for (var i = 0; i < myName.length; i++) {
 
@@ -156,9 +149,9 @@ for (var i = 0; i < webDeveloper.length; i++) {
 	setTimeout('webDeveloper[12].style.display = "inline";', 6300);
 	setTimeout('webDeveloper[13].style.display = "inline";', 6400);
 	setTimeout('webDeveloper[14].style.display = "inline";', 6500);
-}*/
+}
 
-
+*/
 
 
 
@@ -181,15 +174,16 @@ for (var i = 0; i < navLine.length; i++) {
 
 		if (this.id == "about") {
 
-			setTimeout('var aboutPage = document.getElementById("about-page");', 100);
+			setTimeout('var aboutPage = document.getElementById("about-page");', 50);
 
-			setTimeout('aboutPage.children[3].style.width = cliWid * 0.8 + "px";', 100);
-			setTimeout('aboutPage.children[3].style.height = cliWid * 0.8 + "px";', 100);
+			setTimeout('aboutPage.children[4].style.width = cliWid * 0.8 + "px";', 100);
+			setTimeout('aboutPage.children[4].style.height = cliWid * 0.8 + "px";', 100);
 			
-			setTimeout('aboutPage.children[0].style.marginLeft = "5%";', 100);
-			setTimeout('aboutPage.children[1].style.marginLeft = "15%";', 300);
-			setTimeout('aboutPage.children[2].style.marginLeft = "5%";', 500);
-			setTimeout('aboutPage.children[3].style.right = 0;', 700);
+			setTimeout('aboutPage.children[0].style.opacity = 1;', 100);
+			setTimeout('aboutPage.children[1].style.marginLeft = "5%";', 100);
+			setTimeout('aboutPage.children[2].style.marginLeft = "15%";', 300);
+			setTimeout('aboutPage.children[3].style.marginLeft = "5%";', 500);
+			setTimeout('aboutPage.children[4].style.right = 0;', 700);
 
 		}
 
@@ -209,55 +203,51 @@ for (var i = 0; i < navLine.length; i++) {
 
 
 		switch (this.id) {
+			case "home":
+				this.children[0].src = "icons/home11on.png";
+				document.getElementById("about").children[0].src = "icons/aboutme.png";
+				document.getElementById("skills").children[0].src = "icons/skills11.png";
+				document.getElementById("my-work").children[0].src = "icons/mywork11.png";
+				document.getElementById("contact").children[0].src = "icons/contact11.png";
+			break;
 			case "about":
-				this.children[0].style.display = "none";
-				this.children[1].style.display = "inline-block";
-				document.getElementById("skills").children[0].style.display = "inline-block";
-				document.getElementById("my-work").children[0].style.display = "inline-block";
-				document.getElementById("contact").children[0].style.display = "inline-block";
-				document.getElementById("skills").children[1].style.display = "none";
-				document.getElementById("my-work").children[1].style.display = "none";
-				document.getElementById("contact").children[1].style.display = "none";
+				this.children[0].src = "icons/aboutmeon.png";
+				document.getElementById("home").children[0].src = "icons/home11.png";
+				document.getElementById("skills").children[0].src = "icons/skills11.png";
+				document.getElementById("my-work").children[0].src = "icons/mywork11.png";
+				document.getElementById("contact").children[0].src = "icons/contact11.png";
+
 			break;
 			case "skills":
-				this.children[0].style.display = "none";
-				this.children[1].style.display = "inline-block";
-				document.getElementById("about").children[0].style.display = "inline-block";
-				document.getElementById("my-work").children[0].style.display = "inline-block";
-				document.getElementById("contact").children[0].style.display = "inline-block";
-				document.getElementById("about").children[1].style.display = "none";
-				document.getElementById("my-work").children[1].style.display = "none";
-				document.getElementById("contact").children[1].style.display = "none";
+				this.children[0].src = "icons/skills11on.png";
+				document.getElementById("home").children[0].src = "icons/home11.png";
+				document.getElementById("about").children[0].src = "icons/aboutme.png";
+				document.getElementById("my-work").children[0].src = "icons/mywork11.png";
+				document.getElementById("contact").children[0].src = "icons/contact11.png";
+
 			break;
 			case "my-work":
-				this.children[0].style.display = "none";
-				this.children[1].style.display = "inline-block";
-				document.getElementById("skills").children[0].style.display = "inline-block";
-				document.getElementById("about").children[0].style.display = "inline-block";
-				document.getElementById("contact").children[0].style.display = "inline-block";
-				document.getElementById("about").children[1].style.display = "none";
-				document.getElementById("skills").children[1].style.display = "none";
-				document.getElementById("contact").children[1].style.display = "none";
+				this.children[0].src = "icons/mywork11on.png";
+				document.getElementById("home").children[0].src = "icons/home11.png";
+				document.getElementById("about").children[0].src = "icons/aboutme.png";
+				document.getElementById("skills").children[0].src = "icons/skills11.png";
+				document.getElementById("contact").children[0].src = "icons/contact11.png";
+
 			break;
 			case "contact":
-				this.children[0].style.display = "none";
-				this.children[1].style.display = "inline-block";
-				document.getElementById("skills").children[0].style.display = "inline-block";
-				document.getElementById("my-work").children[0].style.display = "inline-block";
-				document.getElementById("about").children[0].style.display = "inline-block";
-				document.getElementById("about").children[1].style.display = "none";
-				document.getElementById("skills").children[1].style.display = "none";
-				document.getElementById("my-work").children[1].style.display = "none";
+				this.children[0].src = "icons/contact11on.png";
+				document.getElementById("home").children[0].src = "icons/home11.png";
+				document.getElementById("about").children[0].src = "icons/aboutme.png";
+				document.getElementById("skills").children[0].src = "icons/skills11.png";
+				document.getElementById("my-work").children[0].src = "icons/mywork11.png";
+
 			break;
 			default:
-				document.getElementById("about").children[0].style.display = "inline-block";
-				document.getElementById("skills").children[0].style.display = "inline-block";
-				document.getElementById("my-work").children[0].style.display = "inline-block";
-				document.getElementById("contact").children[0].style.display = "inline-block";
-				document.getElementById("about").children[1].style.display = "none";
-				document.getElementById("skills").children[1].style.display = "none";
-				document.getElementById("my-work").children[1].style.display = "none";
-				document.getElementById("contact").children[1].style.display = "none";
+				document.getElementById("home").children[0].src = "icons/home11.png";
+				document.getElementById("about").children[0].src = "icons/aboutme.png";
+				document.getElementById("skills").children[0].src = "icons/skills11.png";
+				document.getElementById("my-work").children[0].src = "icons/mywork11.png";
+				document.getElementById("contact").children[0].src = "icons/contact11.png";
 				}
 		});
 
