@@ -174,31 +174,30 @@ for (var i = 0; i < navLine.length; i++) {
 
 		if (this.id == "about") {
 
-			setTimeout('var aboutPage = document.getElementById("about-page");', 100);
 
-			setTimeout('aboutPage.children[4].style.width = cliWid * 0.8 + "px";', 200);
-			setTimeout('aboutPage.children[4].style.height = cliWid * 0.8 + "px";', 200);
+
+			setTimeout('content.children[0].children[4].style.width = cliWid * 0.8 + "px";', 200);
+			setTimeout('content.children[0].children[4].style.height = cliWid * 0.8 + "px";', 200);
 			
-			setTimeout('aboutPage.children[0].style.opacity = 1;', 200);
-			setTimeout('aboutPage.children[1].style.marginLeft = "5%";', 200);
-			setTimeout('aboutPage.children[2].style.marginLeft = "15%";', 400);
-			setTimeout('aboutPage.children[3].style.marginLeft = "5%";', 600);
-			setTimeout('aboutPage.children[4].style.right = 0;', 800);
+			setTimeout('content.children[0].children[0].style.opacity = 1;', 200);
+			setTimeout('content.children[0].children[1].style.marginLeft = "5%";', 200);
+			setTimeout('content.children[0].children[2].style.marginLeft = "15%";', 400);
+			setTimeout('content.children[0].children[3].style.marginLeft = "5%";', 600);
+			setTimeout('content.children[0].children[4].style.right = 0;', 800);
 
 		}
 
 		if (this.id == "skills") {
 
-			setTimeout('var skillsPage = document.getElementById("skills-page");', 100);
 
-			setTimeout('skillsPage.children[0].style.opacity = 1;', 200);
-			setTimeout('skillsPage.children[1].style.marginLeft = "5%";', 200);
-			setTimeout('skillsPage.children[2].style.marginLeft = "5%";', 400);
-			setTimeout('skillsPage.children[3].style.marginLeft = "5%";', 600);
-			setTimeout('skillsPage.children[4].style.marginLeft = "20%";', 800);
+			setTimeout('content.children[0].children[0].style.opacity = 1;', 200);
+			setTimeout('content.children[0].children[1].style.marginLeft = "5%";', 200);
+			setTimeout('content.children[0].children[2].style.marginLeft = "5%";', 400);
+			setTimeout('content.children[0].children[3].style.marginLeft = "5%";', 600);
+			setTimeout('content.children[0].children[4].style.marginLeft = "20%";', 800);
 
 
-			setTimeout('skillsPage.children[4].style.height = cliWid * 1.2 + "px";', 200);
+			setTimeout('content.children[0].children[4].style.height = cliWid * 1.2 + "px";', 200);
 
 		}
 
