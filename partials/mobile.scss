@@ -18,13 +18,7 @@ body  {
 			.heading-logo {
 				width: 12%;
 				float: left;
-				margin: 2.5%;
-			}
-			h1 {
-				font: 400 2rem 'Caveat', cursive;
-				float: left;
-				margin: 3% 2.5% 0 2.5%;
-				color: #fff;
+				margin: 2.5% 0 2.5% 44%;
 			}
 			.ham-but {
 				height: 15px;
@@ -68,6 +62,8 @@ body  {
 			bottom: 18%;
 			animation: opacity 4s infinite;
 			opacity: 20%;
+			z-index: 1;
+
 		}
 		@keyframes opacity {
 			0% {opacity: 2%;}
@@ -100,6 +96,8 @@ body  {
 
 		.content {
 			color: #fff;
+			width: 100%;
+				height: 100%;
 			/*lasnding page content*/
 			.home-page-content {
 				top: 50%;
@@ -150,7 +148,6 @@ body  {
 			/*about page content*/
 			.about-page {
 				width: 100%;
-
 				.about-first-paragraph, .about-second-paragraph, .about-third-paragraph {
 					width: 80%;
 					font: 200 0.9rem 'Open Sans', sans-serif;
@@ -237,7 +234,63 @@ body  {
 				@keyframes spin {
 					100% {transform: rotate(360deg);}
 				}
-
+			}
+			/*my work page content*/
+			.my-work-page {
+				width: 100%;
+				z-index: 10;
+				position: relative;
+				.blomm, .nice, {
+					width: 90%;
+					transition: 1s;
+					img {
+						width: 100%;
+						}
+					h1 {
+						font: 200 0.9rem 'Open Sans', sans-serif;
+						color: #fff;
+						text-align: center;
+					}
+				}
+				.blomm {
+					margin: 10% 0 0 -100%;
+				}
+				.nice {
+					margin: 5% 0 0 105%;
+				}
+			}
+			/*contact page content*/
+			.contact-page {
+				width: 100%;
+				height: 100%;
+				z-index: 10;
+				position: relative;
+				.contact-first-paragraph, .contact-second-paragraph {
+					width: 80%;
+					font: 200 0.9rem 'Open Sans', sans-serif;
+					margin: 5% 0 0 -80%;
+					transition: 1s;
+				}
+				.email, .tel, .link, .insta {
+					width: 90%;
+					margin: 15% 0 0 105%;
+					height: 7%;
+					transition: 1s;
+					img {
+						width: 10%;
+						float: left;
+						margin: 0 0 0 10%;
+					}
+					p {
+						font: 200 0.8rem 'Open Sans', sans-serif;
+						float: left;
+						color: #fff;
+						margin: 3% 0 0 10%;
+					}
+				}
+				.tel, .link, .insta {
+					margin-top: 3%;
+				}
 			}
 		}
 		

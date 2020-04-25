@@ -90,7 +90,7 @@ var firBrake = document.getElementById("greater-than");
 var secBrake = document.getElementById("curly-brace");
 var thiBrake = document.getElementById("bracket-2");
 
-/*for (var i = 0; i < myName.length; i++) {
+for (var i = 0; i < myName.length; i++) {
 
 	setTimeout('myName[0].style.display = "inline";', 1000);
 	setTimeout('myName[1].style.display = "inline";', 1100);
@@ -151,7 +151,7 @@ for (var i = 0; i < webDeveloper.length; i++) {
 	setTimeout('webDeveloper[14].style.display = "inline";', 6500);
 }
 
-*/
+
 
 
 
@@ -198,6 +198,30 @@ for (var i = 0; i < navLine.length; i++) {
 
 
 			setTimeout('content.children[0].children[4].style.height = cliWid * 1.2 + "px";', 200);
+
+		}
+
+		if (this.id == "my-work") {
+
+
+			setTimeout('content.children[0].children[0].style.opacity = 1;', 200);
+			setTimeout('content.children[0].children[1].style.marginLeft = "5%";', 200);
+			setTimeout('content.children[0].children[2].style.marginLeft = "5%";', 400);
+
+
+		}
+
+		if (this.id == "contact") {
+
+
+			setTimeout('content.children[0].children[0].style.opacity = 1;', 200);
+			setTimeout('content.children[0].children[1].style.marginLeft = "5%";', 200);
+			setTimeout('content.children[0].children[2].style.marginLeft = "5%";', 400);
+			setTimeout('content.children[0].children[3].style.marginLeft = "5%";', 600);
+			setTimeout('content.children[0].children[4].style.marginLeft = "5%";', 800);
+			setTimeout('content.children[0].children[5].style.marginLeft = "5%";', 1000);
+			setTimeout('content.children[0].children[6].style.marginLeft = "5%";', 1200);
+
 
 		}
 
@@ -272,5 +296,9 @@ for (var i = 0; i < navLine.length; i++) {
 
 
 
+
+
+
+		console.log(2+3);
 
 

@@ -19,12 +19,7 @@ body {
       body .container .heading .heading-logo {
         width: 12%;
         float: left;
-        margin: 2.5%; }
-      body .container .heading h1 {
-        font: 400 2rem 'Caveat', cursive;
-        float: left;
-        margin: 3% 2.5% 0 2.5%;
-        color: #fff; }
+        margin: 2.5% 0 2.5% 44%; }
       body .container .heading .ham-but {
         height: 15px;
         width: 27px;
@@ -57,7 +52,8 @@ body {
       position: absolute;
       bottom: 18%;
       animation: opacity 4s infinite;
-      opacity: 20%; }
+      opacity: 20%;
+      z-index: 1; }
 @keyframes opacity {
   0% {
     opacity: 2%; }
@@ -82,9 +78,13 @@ body {
           /*display: none;*/ }
     body .container .content {
       color: #fff;
+      width: 100%;
+      height: 100%;
       /*lasnding page content*/
       /*about page content*/
-      /*skills page content*/ }
+      /*skills page content*/
+      /*my work page content*/
+      /*contact page content*/ }
       body .container .content .home-page-content {
         top: 50%;
         left: 5%;
@@ -191,5 +191,48 @@ body {
 @keyframes spin {
   100% {
     transform: rotate(360deg); } }
+      body .container .content .my-work-page {
+        width: 100%;
+        z-index: 10;
+        position: relative; }
+        body .container .content .my-work-page .blomm, body .container .content .my-work-page .nice {
+          width: 90%;
+          transition: 1s; }
+          body .container .content .my-work-page .blomm img, body .container .content .my-work-page .nice img {
+            width: 100%; }
+          body .container .content .my-work-page .blomm h1, body .container .content .my-work-page .nice h1 {
+            font: 200 0.9rem 'Open Sans', sans-serif;
+            color: #fff;
+            text-align: center; }
+        body .container .content .my-work-page .blomm {
+          margin: 10% 0 0 -100%; }
+        body .container .content .my-work-page .nice {
+          margin: 5% 0 0 105%; }
+      body .container .content .contact-page {
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        position: relative; }
+        body .container .content .contact-page .contact-first-paragraph, body .container .content .contact-page .contact-second-paragraph {
+          width: 80%;
+          font: 200 0.9rem 'Open Sans', sans-serif;
+          margin: 5% 0 0 -80%;
+          transition: 1s; }
+        body .container .content .contact-page .email, body .container .content .contact-page .tel, body .container .content .contact-page .link, body .container .content .contact-page .insta {
+          width: 90%;
+          margin: 15% 0 0 105%;
+          height: 7%;
+          transition: 1s; }
+          body .container .content .contact-page .email img, body .container .content .contact-page .tel img, body .container .content .contact-page .link img, body .container .content .contact-page .insta img {
+            width: 10%;
+            float: left;
+            margin: 0 0 0 10%; }
+          body .container .content .contact-page .email p, body .container .content .contact-page .tel p, body .container .content .contact-page .link p, body .container .content .contact-page .insta p {
+            font: 200 0.8rem 'Open Sans', sans-serif;
+            float: left;
+            color: #fff;
+            margin: 3% 0 0 10%; }
+        body .container .content .contact-page .tel, body .container .content .contact-page .link, body .container .content .contact-page .insta {
+          margin-top: 3%; }
 
 /*# sourceMappingURL=mobile.css.map */
