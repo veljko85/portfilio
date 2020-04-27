@@ -85,8 +85,18 @@ body {
       /*skills page content*/
       /*my work page content*/
       /*contact page content*/ }
+      body .container .content .home-page-contact {
+        width: 70%;
+        margin-left: 15%;
+        position: absolute;
+        bottom: 5%;
+        z-index: 10; }
+        body .container .content .home-page-contact img {
+          width: 15%;
+          margin: 0 5%;
+          float: left; }
       body .container .content .home-page-content {
-        top: 50%;
+        top: 40%;
         left: 5%;
         position: absolute; }
         body .container .content .home-page-content .name {
