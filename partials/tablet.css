@@ -1,161 +1,70 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  body header {
-    height: 100px; }
-    body header .logo {
-      width: 80px;
-      margin-top: 10px; }
-    body header .ham-but {
-      margin: 42.5px 20px 0 0; }
-  body .nav .logo-nav {
-    width: 100px;
-    margin-top: 50px; }
-  body .nav .nav-list {
-    margin-top: 100px; }
-  body .nav .usluge-show {
-    width: 55px;
-    height: 65px; }
-    body .nav .usluge-show img {
-      margin-top: 27.5px; }
-  body .nav a {
-    font: 400 30px 'Open Sans', sans-serif; }
-  body .nav li {
-    padding: 25px 0; }
-  body .nav .proslave-show {
-    width: 55px;
-    height: 65px; }
-    body .nav .proslave-show img {
-      margin-top: 27.5px; }
-  body .nav .nav-footer .social {
-    width: 80px; }
-    body .nav .nav-footer .social a {
-      width: 25px; }
-      body .nav .nav-footer .social a img {
-        width: 25px; }
-  body .main-container {
-    /* ABOUT US */
-    /* CONTACT */
-    /* GALERIJA */
-    /*USLUGE CLASSE ZA EXTEND*/
-    /* RODJENDANI*/
-    /* DOGADJAJI*/
-    /*BUKETI*/
-    /*BOX*/
-    /*USLUGE FOOTER*/ }
-    body .main-container .about-us .img-container {
-      display: inline-block;
-      margin-left: 30px; }
-    body .main-container .about-us .about-us-info-container {
-      width: 350px;
-      margin: 50px 0 0 30px;
-      display: inline-block; }
-    body .main-container .contact .img-container {
-      display: inline-block;
-      margin-left: 30px; }
-    body .main-container .contact .contact-main-line {
-      width: 350px;
-      margin: 50px 0 0 30px;
-      display: inline-block;
-      display: none; }
-    body .main-container .contact .contact-text {
-      width: 350px;
-      margin: 50px 0 0 30px;
-      display: inline-block;
-      padding: 0; }
-    body .main-container .contact .contact-info-container {
-      width: 90%;
-      padding: 0 0 50px 10%; }
-      body .main-container .contact .contact-info-container .cont-info {
-        width: 45%;
-        display: inline-block; }
-    body .main-container .galerija .galerija-slike .gal-img-container {
-      height: 150px; }
-    body .main-container .usluge-tab, body .main-container .vencanja, body .main-container .rodjendani, body .main-container .dogadjaji, body .main-container .buketi, body .main-container .box {
-      width: 100%;
-      background-color: #162027;
-      text-align: center; }
-    body .main-container .usluge-head-tab, body .main-container .vencanja .vencanja-head, body .main-container .rodjendani .rodjendani-head, body .main-container .dogadjaji .dogadjaji-head, body .main-container .buketi .buketi-head, body .main-container .box .box-head {
-      width: 100%;
-      background-color: #162027;
-      padding: 100px 0 10px 0; }
-      body .main-container .usluge-head-tab img, body .main-container .vencanja .vencanja-head img, body .main-container .rodjendani .rodjendani-head img, body .main-container .dogadjaji .dogadjaji-head img, body .main-container .buketi .buketi-head img, body .main-container .box .box-head img {
-        width: 130px;
-        padding: 30px; }
-    body .main-container .usluge-img-container-tab, body .main-container .vencanja .vencanja-head .img-container, body .main-container .rodjendani .rodjendani-head .img-container, body .main-container .dogadjaji .dogadjaji-head .img-container, body .main-container .buketi .buketi-head .img-container, body .main-container .box .box-head .img-container {
-      -webkit-background-size: cover;
-      background-size: cover;
-      background-position: center;
-      height: 400px; }
-      body .main-container .usluge-img-container-tab h2, body .main-container .vencanja .vencanja-head .img-container h2, body .main-container .rodjendani .rodjendani-head .img-container h2, body .main-container .dogadjaji .dogadjaji-head .img-container h2, body .main-container .buketi .buketi-head .img-container h2, body .main-container .box .box-head .img-container h2 {
-        font: 500 40px 'Open Sans', sans-serif;
-        color: #fff;
-        padding-top: 15%; }
-      body .main-container .usluge-img-container-tab img, body .main-container .vencanja .vencanja-head .img-container img, body .main-container .rodjendani .rodjendani-head .img-container img, body .main-container .dogadjaji .dogadjaji-head .img-container img, body .main-container .buketi .buketi-head .img-container img, body .main-container .box .box-head .img-container img {
-        width: 80px; }
-    body .main-container .usluge-info-tab, body .main-container .vencanja .vencanja-info, body .main-container .rodjendani .rodjendani-info, body .main-container .dogadjaji .dogadjaji-info, body .main-container .buketi .buketi-info, body .main-container .box .box-info {
-      width: 90%;
-      background-color: #162027;
-      text-align: left;
-      color: #fff;
-      margin: 0 auto;
-      padding-bottom: 30px; }
-      body .main-container .usluge-info-tab h5, body .main-container .vencanja .vencanja-info h5, body .main-container .rodjendani .rodjendani-info h5, body .main-container .dogadjaji .dogadjaji-info h5, body .main-container .buketi .buketi-info h5, body .main-container .box .box-info h5 {
-        font: 400 25px 'Open Sans', sans-serif;
-        margin-left: 10px; }
-      body .main-container .usluge-info-tab p, body .main-container .vencanja .vencanja-info p, body .main-container .rodjendani .rodjendani-info p, body .main-container .dogadjaji .dogadjaji-info p, body .main-container .buketi .buketi-info p, body .main-container .box .box-info p {
-        font: 400 17px 'Open Sans', sans-serif; }
-    body .main-container .usluge-slike-tab, body .main-container .vencanja .vencanja-slike, body .main-container .rodjendani .rodjendani-slike, body .main-container .dogadjaji .dogadjaji-slike, body .main-container .buketi .buketi-slike, body .main-container .box .box-slike {
-      width: 96%;
-      background-color: #fff;
-      padding: 20px 2% 20px 2%; }
-    body .main-container .usluge-gal-img-container-tab, body .main-container .vencanja .vencanja-slike .ven-img-container, body .main-container .rodjendani .rodjendani-slike .rodj-img-container, body .main-container .dogadjaji .dogadjaji-slike .dog-img-container, body .main-container .buketi .buketi-slike .buketi-con .buk-img-container, body .main-container .box .box-slike .box-con .box-img-container {
-      width: 32%;
-      height: 250px;
-      -webkit-background-size: cover;
-      background-size: cover;
-      background-position: center;
-      display: inline-block;
-      margin-bottom: 10px; }
-    body .main-container .vencanja .vencanja-head .img-container {
-      background-image: url(../img/vencanje-mob.jpg); }
-    body .main-container .rodjendani .rodjendani-head .img-container {
-      background-image: url(../img/rodjendani1.jpg); }
-    body .main-container .dogadjaji .dogadjaji-head .img-container {
-      background-image: url(../img/dogadjaji.jpg); }
-    body .main-container .buketi .buketi-head .img-container {
-      background-image: url(../img/buket3.jpg); }
-    body .main-container .buketi .buketi-slike .buketi-con {
-      width: 32%;
-      display: inline-block; }
-      body .main-container .buketi .buketi-slike .buketi-con p {
-        font: 600 15px 'Open Sans', sans-serif;
-        color: #000;
-        margin-bottom: 30px; }
-      body .main-container .buketi .buketi-slike .buketi-con .buk-img-container {
-        margin-bottom: 10px;
+  body .container {
+    /*navigatin bar*/
+    /*landing page letters*/ }
+    body .container .home-page-contact {
+      width: 50%;
+      margin-left: 25%; }
+    body .container .heading .heading-logo {
+      width: 9%;
+      margin: 2.5% 0 2.5% 45.5%; }
+    body .container .heading .ham-but {
+      margin: 6% 25px 0 0; }
+    body .container .vm {
+      margin-left: 10%; }
+    body .container .nav-bar {
+      margin-top: -0.7%; }
+      body .container .nav-bar .nav-line {
+        width: 19.5%;
+        margin-top: 2%; }
+        body .container .nav-bar .nav-line img {
+          width: 25%; }
+    body .container .content {
+      /*lasnding page content*/
+      /*about page content*/
+      /*skills page content*/
+      /*my work page content*/
+      /*contact page content*/ }
+      body .container .content .home-page-content .name {
+        font: 400 5rem 'Do Hyeon', sans-serif; }
+      body .container .content .home-page-content .name-2 {
+        font: 400 5rem 'Do Hyeon', sans-serif; }
+      body .container .content .home-page-content .last-name {
+        font: 400 5rem 'Do Hyeon', sans-serif; }
+      body .container .content .home-page-content .last-name-2 {
+        font: 400 5rem 'Do Hyeon', sans-serif; }
+      body .container .content .home-page-content .web-developer {
+        font: 400 5rem 'Do Hyeon', sans-serif; }
+      body .container .content .home-page-content .web-developer-2 {
+        font: 400 5rem 'Do Hyeon', sans-serif; }
+      body .container .content .home-page-content .flashing {
+        font: 400 5rem 'Do Hyeon', sans-serif; }
+      body .container .content .page-title {
+        font: 200 3rem 'Open Sans', sans-serif;
+        margin: 5% 0 0 5%; }
+      body .container .content .about-page .about-first-paragraph, body .container .content .about-page .about-second-paragraph, body .container .content .about-page .about-third-paragraph {
+        font: 200 1.5rem 'Open Sans', sans-serif; }
+      body .container .content .about-page .about-first-paragraph {
+        margin: 3% 0 0 -80%; }
+      body .container .content .about-page .about-second-paragraph {
+        margin: 3% 0 0 100%; }
+      body .container .content .about-page .about-third-paragraph {
+        margin: 3% 0 0 -80%; }
+      body .container .content .skills-page .skills-first-paragraph, body .container .content .skills-page .skills-second-paragraph, body .container .content .skills-page .skills-third-paragraph {
+        font: 200 1.5rem 'Open Sans', sans-serif; }
+      body .container .content .skills-page .skills-icons-wrap {
         width: 100%; }
-    body .main-container .box .box-head .img-container {
-      background-image: url(../img/box.jpg); }
-    body .main-container .box .box-slike .box-con {
-      width: 32%;
-      display: inline-block; }
-      body .main-container .box .box-slike .box-con p {
-        font: 600 15px 'Open Sans', sans-serif;
-        color: #000;
-        margin-bottom: 30px; }
-      body .main-container .box .box-slike .box-con .box-img-container {
-        margin-bottom: 10px;
-        width: 100%; }
-    body .main-container .template-footer .foot-cont-info .foot-info img {
-      width: 30px; }
-    body .main-container .template-footer .foot-cont-info .foot-info span {
-      font: 600 18px 'Open Sans', sans-serif; }
-    body .main-container .template-footer .social-in-template {
-      width: 100px; }
-      body .main-container .template-footer .social-in-template a {
-        width: 30px; }
-        body .main-container .template-footer .social-in-template a img {
-          width: 30px; }
-    body .main-container .template-footer p {
-      text-align: center; } }
+      body .container .content .my-work-page .blomm, body .container .content .my-work-page .nice {
+        width: 60%; }
+        body .container .content .my-work-page .blomm img, body .container .content .my-work-page .nice img {
+          width: 100%; }
+      body .container .content .my-work-page .blomm {
+        margin: 5% 0 0 -100%; }
+      body .container .content .my-work-page .nice {
+        margin: 3% 0 0 105%; }
+      body .container .content .contact-page .contact-first-paragraph, body .container .content .contact-page .contact-second-paragraph {
+        font: 200 1.5rem 'Open Sans', sans-serif; }
+      body .container .content .contact-page .email p, body .container .content .contact-page .tel p, body .container .content .contact-page .link p, body .container .content .contact-page .insta p {
+        font: 200 1.2rem 'Open Sans', sans-serif; } }
 
 /*# sourceMappingURL=tablet.css.map */

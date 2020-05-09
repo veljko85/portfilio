@@ -5,22 +5,23 @@ var firLin = document.getElementById("first-line");
 var secLin = document.getElementById("second-line");
 var thiLin = document.getElementById("third-line");
 var content = document.getElementById("content");
-
-
-
-
-
+var homePageContact = document.getElementById("home-page-contact");
 
 //set image on home page size
-bckLogo.style.height = cliWid + "px";
-bckLogo.style.width = cliWid + "px";
-//bckLogo.style.marginLeft = (cliWid-(cliWid / 1.5))/2 + "px";
-
-
-
+if (cliWid < 768) {
+	bckLogo.style.height = cliWid + "px";
+	bckLogo.style.width = cliWid + "px";
+}
+if (cliWid < 1025 && cliWid > 767) {
+	bckLogo.style.height = cliWid * 0.8 + "px";
+	bckLogo.style.width = cliWid * 0.8 + "px";
+}
+if (cliWid > 1024) {
+	bckLogo.style.height = cliWid * 0.4 + "px";
+	bckLogo.style.width = cliWid * 0.4 + "px";
+}
 
 //navigatin bar open and close
-
 var navLine = document.getElementsByClassName("nav-line");
 var navBar = document.getElementById("nav-bar");
 
@@ -29,60 +30,31 @@ function navClose () {
 		secLin.style.display = "block";
 		thiLin.classList.remove("change2");
 
-		navBar.style.width = 0;
-		for (var i = 0; i < navLine.length; i++) {
-			navLine[i].children[0].style.transition = "0s";
-			navLine[i].children[0].style.opacity = 0;
-			navLine[i].children[0].style.display = "inline-block";
-		}
+		navBar.style.marginLeft = 100 + "%";
 }
 		
-
-
-
 function navOpen () {
+	hamBut.style.transition = "0.3s";
 	firLin.classList.add("change1");
 	secLin.style.display = "none";
 	thiLin.classList.add("change2");
 
-
-
-
-	navBar.style.width = 100 + "%";
-	for (var i = 0; i < navLine.length; i++) {
-
-
-		navLine[i].children[0].style.transition = "0.3s";
-		setTimeout('navLine[0].children[0].style.opacity = 1;', 300);
-		setTimeout('navLine[1].children[0].style.opacity = 1;', 300);
-		setTimeout('navLine[2].children[0].style.opacity = 1;', 300);
-		setTimeout('navLine[3].children[0].style.opacity = 1;', 300);
-		setTimeout('navLine[4].children[0].style.opacity = 1;', 300);
-
-	}
-
-	
-
-
-
+	navBar.style.marginLeft = 0 + "%";
 }
-
 
 //hamburger button animation
 hamBut.onclick = () => {
 
-		if (secLin.style.display == "none") {
-			navClose();
+	if (secLin.style.display == "none") {
+		navClose();
 
-		}	else	{
-			navBar.style.transition = "0.3s";
-			navOpen();
-		}
+	}	else	{
+		navBar.style.transition = "0.3s";
+		navOpen();
+	}
 }
 
 //home page velibor markovic animation
-
-
 var myName = document.getElementsByClassName("name");
 var lastName = document.getElementsByClassName("last-name");
 var webDeveloper = document.getElementsByClassName("web-developer");
@@ -105,14 +77,7 @@ for (var i = 0; i < myName.length; i++) {
 
 setTimeout('firBrake.insertAdjacentHTML("afterend", "<br>");', 2300);
 
-
 for (var i = 0; i < lastName.length; i++) {
-	lastName[i].addEventListener("mouseover", function() {
-	        this.style.color = "#00ec00";
-	});
-	lastName[i].addEventListener("mouseout", function() {
-	        this.style.color = "#fff";
-	});
 	setTimeout('lastName[0].style.display = "inline";', 3000);
 	setTimeout('lastName[1].style.display = "inline";', 3100);
 	setTimeout('lastName[2].style.display = "inline";', 3200);
@@ -128,12 +93,6 @@ for (var i = 0; i < lastName.length; i++) {
 setTimeout('secBrake.insertAdjacentHTML("afterend", "<br>");', 4600);
 
 for (var i = 0; i < webDeveloper.length; i++) {
-	webDeveloper[i].addEventListener("mouseover", function() {
-	        this.style.color = "#00ec00";
-	});
-	webDeveloper[i].addEventListener("mouseout", function() {
-	        this.style.color = "#fff";
-	});
 	setTimeout('webDeveloper[0].style.display = "inline";', 5100);
 	setTimeout('webDeveloper[1].style.display = "inline";', 5200);
 	setTimeout('webDeveloper[2].style.display = "inline";', 5300);
@@ -151,10 +110,6 @@ for (var i = 0; i < webDeveloper.length; i++) {
 	setTimeout('webDeveloper[14].style.display = "inline";', 6500);
 }
 
-
-
-
-
 //nav bar change on clicks
 for (var i = 0; i < navLine.length; i++) {
 	navLine[i].addEventListener("click", function() {
@@ -169,126 +124,185 @@ for (var i = 0; i < navLine.length; i++) {
 		xhttp.open("GET", "html/" + this.id + ".html", true);
 		xhttp.send();
 
-
-			
-
 		if (this.id == "about") {
 
+			if (cliWid < 768) {
+				setTimeout('content.children[0].children[4].style.width = cliWid * 0.8 + "px";', 200);
+				setTimeout('content.children[0].children[4].style.height = cliWid * 0.8 + "px";', 200);
 
+				setTimeout('content.children[0].children[0].style.opacity = 1;', 200);
+				setTimeout('content.children[0].children[1].style.marginLeft = "5%";', 200);
+				setTimeout('content.children[0].children[2].style.marginLeft = "15%";', 400);
+				setTimeout('content.children[0].children[3].style.marginLeft = "5%";', 600);
+				setTimeout('content.children[0].children[4].style.right = 0;', 800);
 
-			setTimeout('content.children[0].children[4].style.width = cliWid * 0.8 + "px";', 200);
-			setTimeout('content.children[0].children[4].style.height = cliWid * 0.8 + "px";', 200);
+				homePageContact.style.display = "none";
+			}
+
+			if (cliWid < 1025 && cliWid > 767) {
+				setTimeout('content.children[0].children[4].style.width = cliWid * 0.6 + "px";', 200);
+				setTimeout('content.children[0].children[4].style.height = cliWid * 0.6 + "px";', 200);
+
+				setTimeout('content.children[0].children[0].style.opacity = 1;', 200);
+				setTimeout('content.children[0].children[1].style.marginLeft = "5%";', 200);
+				setTimeout('content.children[0].children[2].style.marginLeft = "15%";', 400);
+				setTimeout('content.children[0].children[3].style.marginLeft = "5%";', 600);
+				setTimeout('content.children[0].children[4].style.right = 0;', 800);
+
+				homePageContact.style.display = "none";
+			}
 			
-			setTimeout('content.children[0].children[0].style.opacity = 1;', 200);
-			setTimeout('content.children[0].children[1].style.marginLeft = "5%";', 200);
-			setTimeout('content.children[0].children[2].style.marginLeft = "15%";', 400);
-			setTimeout('content.children[0].children[3].style.marginLeft = "5%";', 600);
-			setTimeout('content.children[0].children[4].style.right = 0;', 800);
+			if (cliWid > 1024) {
+				setTimeout('content.children[0].children[4].style.width = cliWid * 0.5 + "px";', 200);
+				setTimeout('content.children[0].children[4].style.height = cliWid * 0.5 + "px";', 200);
 
+				setTimeout('content.children[0].children[0].style.opacity = 1;', 200);
+				setTimeout('content.children[0].children[1].style.marginLeft = "5.5%";', 200);
+				setTimeout('content.children[0].children[2].style.marginLeft = "5.5%";', 400);
+				setTimeout('content.children[0].children[3].style.marginLeft = "5.5%";', 600);
+				setTimeout('content.children[0].children[4].style.right = 0;', 800);
+			}
 		}
 
 		if (this.id == "skills") {
 
+			if (cliWid < 768) {
+				setTimeout('content.children[0].children[4].style.height = cliWid * 1.2 + "px";', 200);
+				setTimeout('content.children[0].children[4].style.marginLeft = "20%";', 800);
 
-			setTimeout('content.children[0].children[0].style.opacity = 1;', 200);
-			setTimeout('content.children[0].children[1].style.marginLeft = "5%";', 200);
-			setTimeout('content.children[0].children[2].style.marginLeft = "5%";', 400);
-			setTimeout('content.children[0].children[3].style.marginLeft = "5%";', 600);
-			setTimeout('content.children[0].children[4].style.marginLeft = "20%";', 800);
+				setTimeout('content.children[0].children[0].style.opacity = 1;', 200);
+				setTimeout('content.children[0].children[1].style.marginLeft = "5%";', 200);
+				setTimeout('content.children[0].children[2].style.marginLeft = "5%";', 400);
+				setTimeout('content.children[0].children[3].style.marginLeft = "5%";', 600);
 
+				setTimeout('for (var i = 0; i < content.children[0].children[4].children.length; i++) {content.children[0].children[4].children[i].style.height = cliWid * 0.24 + "px";}', 200);
+					
+				homePageContact.style.display = "none";
+			}
 
-			setTimeout('content.children[0].children[4].style.height = cliWid * 1.2 + "px";', 200);
+			if (cliWid < 1025 && cliWid > 767) {
+				setTimeout('content.children[0].children[4].style.height = cliWid + "px";', 200);
+				setTimeout('content.children[0].children[4].style.marginLeft = "40%";', 800);
 
+				setTimeout('content.children[0].children[0].style.opacity = 1;', 200);
+				setTimeout('content.children[0].children[1].style.marginLeft = "5%";', 200);
+				setTimeout('content.children[0].children[2].style.marginLeft = "5%";', 400);
+				setTimeout('content.children[0].children[3].style.marginLeft = "5%";', 600);
+
+				setTimeout('for (var i = 0; i < content.children[0].children[4].children.length; i++) {content.children[0].children[4].children[i].style.height = cliWid * 0.2 + "px";}', 200);
+				
+				homePageContact.style.display = "none";
+			}
+
+			if (cliWid > 1024) {
+				setTimeout('content.children[0].children[4].style.height = cliWid * 0.3 + "px";', 200);
+				setTimeout('content.children[0].children[4].style.marginLeft = "55%";', 800);
+
+				setTimeout('content.children[0].children[0].style.opacity = 1;', 200);
+				setTimeout('content.children[0].children[1].style.marginLeft = "5.5%";', 200);
+				setTimeout('content.children[0].children[2].style.marginLeft = "5.5%";', 400);
+				setTimeout('content.children[0].children[3].style.marginLeft = "5.5%";', 600);	
+
+				setTimeout('for (var i = 0; i < content.children[0].children[4].children.length; i++) {content.children[0].children[4].children[i].style.height = cliWid * 0.06 + "px";}', 200);
+			}
 		}
 
-		if (this.id == "my-work") {
-
+		if (this.id == "my work") {
 
 			setTimeout('content.children[0].children[0].style.opacity = 1;', 200);
-			setTimeout('content.children[0].children[1].style.marginLeft = "5%";', 200);
-			setTimeout('content.children[0].children[2].style.marginLeft = "5%";', 400);
+			
+			if (cliWid < 768) {
+				setTimeout('content.children[0].children[1].style.marginLeft = "5%";', 200);
+				setTimeout('content.children[0].children[2].style.marginLeft = "5%";', 400);
 
+				homePageContact.style.display = "none";
+			}
 
+			if (cliWid < 1025 && cliWid > 767) {
+				setTimeout('content.children[0].children[1].style.marginLeft = "20%";', 200);
+				setTimeout('content.children[0].children[2].style.marginLeft = "20%";', 400);
+
+				homePageContact.style.display = "none";
+			}
+
+			if (cliWid > 1024) {
+				setTimeout('content.children[0].children[1].style.opacity = "1";', 200);
+				setTimeout('content.children[0].children[2].style.opacity = "1";', 200);
+			}
 		}
 
 		if (this.id == "contact") {
 
+			if (cliWid < 1025) {
+				setTimeout('content.children[0].children[0].style.opacity = 1;', 200);
+				setTimeout('content.children[0].children[1].style.marginLeft = "5%";', 200);
+				setTimeout('content.children[0].children[2].style.marginLeft = "5%";', 400);
+				setTimeout('content.children[0].children[3].style.marginLeft = "5%";', 600);
+				setTimeout('content.children[0].children[4].style.marginLeft = "5%";', 800);
+				setTimeout('content.children[0].children[5].style.marginLeft = "5%";', 1000);
+				setTimeout('content.children[0].children[6].style.marginLeft = "5%";', 1200);
 
-			setTimeout('content.children[0].children[0].style.opacity = 1;', 200);
-			setTimeout('content.children[0].children[1].style.marginLeft = "5%";', 200);
-			setTimeout('content.children[0].children[2].style.marginLeft = "5%";', 400);
-			setTimeout('content.children[0].children[3].style.marginLeft = "5%";', 600);
-			setTimeout('content.children[0].children[4].style.marginLeft = "5%";', 800);
-			setTimeout('content.children[0].children[5].style.marginLeft = "5%";', 1000);
-			setTimeout('content.children[0].children[6].style.marginLeft = "5%";', 1200);
-
-
+				homePageContact.style.display = "none";
+			}
+			if (cliWid > 1024) {
+				setTimeout('content.children[0].children[0].style.opacity = 1;', 200);
+				setTimeout('content.children[0].children[1].style.marginLeft = "5%";', 200);
+				setTimeout('content.children[0].children[2].style.marginLeft = "5%";', 400);
+				setTimeout('content.children[0].children[3].style.marginLeft = "50%";', 600);
+				setTimeout('content.children[0].children[4].style.marginLeft = "50%";', 800);
+				setTimeout('content.children[0].children[5].style.marginLeft = "50%";', 1000);
+				setTimeout('content.children[0].children[6].style.marginLeft = "50%";', 1200);
+			}
 		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 		switch (this.id) {
 			case "home":
-				this.children[0].src = "icons/home11on.png";
-				document.getElementById("about").children[0].src = "icons/aboutme.png";
-				document.getElementById("skills").children[0].src = "icons/skills11.png";
-				document.getElementById("my-work").children[0].src = "icons/mywork11.png";
-				document.getElementById("contact").children[0].src = "icons/contact11.png";
+				this.children[0].src = "icons/Homeon.png";
+				document.getElementById("about").children[0].src = "icons/About.png";
+				document.getElementById("skills").children[0].src = "icons/Skills.png";
+				document.getElementById("my work").children[0].src = "icons/My work.png";
+				document.getElementById("contact").children[0].src = "icons/Contact.png";
 			break;
 			case "about":
-				this.children[0].src = "icons/aboutmeon.png";
-				document.getElementById("home").children[0].src = "icons/home11.png";
-				document.getElementById("skills").children[0].src = "icons/skills11.png";
-				document.getElementById("my-work").children[0].src = "icons/mywork11.png";
-				document.getElementById("contact").children[0].src = "icons/contact11.png";
+				this.children[0].src = "icons/Abouton.png";
+				document.getElementById("home").children[0].src = "icons/Home.png";
+				document.getElementById("skills").children[0].src = "icons/Skills.png";
+				document.getElementById("my work").children[0].src = "icons/My work.png";
+				document.getElementById("contact").children[0].src = "icons/Contact.png";
 
 			break;
 			case "skills":
-				this.children[0].src = "icons/skills11on.png";
-				document.getElementById("home").children[0].src = "icons/home11.png";
-				document.getElementById("about").children[0].src = "icons/aboutme.png";
-				document.getElementById("my-work").children[0].src = "icons/mywork11.png";
-				document.getElementById("contact").children[0].src = "icons/contact11.png";
+				this.children[0].src = "icons/Skillson.png";
+				document.getElementById("home").children[0].src = "icons/Home.png";
+				document.getElementById("about").children[0].src = "icons/About.png";
+				document.getElementById("my work").children[0].src = "icons/My work.png";
+				document.getElementById("contact").children[0].src = "icons/Contact.png";
 
 			break;
-			case "my-work":
-				this.children[0].src = "icons/mywork11on.png";
-				document.getElementById("home").children[0].src = "icons/home11.png";
-				document.getElementById("about").children[0].src = "icons/aboutme.png";
-				document.getElementById("skills").children[0].src = "icons/skills11.png";
-				document.getElementById("contact").children[0].src = "icons/contact11.png";
+			case "my work":
+				this.children[0].src = "icons/My workon.png";
+				document.getElementById("home").children[0].src = "icons/Home.png";
+				document.getElementById("about").children[0].src = "icons/About.png";
+				document.getElementById("skills").children[0].src = "icons/Skills.png";
+				document.getElementById("contact").children[0].src = "icons/Contact.png";
 
 			break;
 			case "contact":
-				this.children[0].src = "icons/contact11on.png";
-				document.getElementById("home").children[0].src = "icons/home11.png";
-				document.getElementById("about").children[0].src = "icons/aboutme.png";
-				document.getElementById("skills").children[0].src = "icons/skills11.png";
-				document.getElementById("my-work").children[0].src = "icons/mywork11.png";
+				this.children[0].src = "icons/Contacton.png";
+				document.getElementById("home").children[0].src = "icons/Home.png";
+				document.getElementById("about").children[0].src = "icons/About.png";
+				document.getElementById("skills").children[0].src = "icons/Skills.png";
+				document.getElementById("my work").children[0].src = "icons/My work.png";
 
 			break;
 			default:
-				document.getElementById("home").children[0].src = "icons/home11.png";
-				document.getElementById("about").children[0].src = "icons/aboutme.png";
-				document.getElementById("skills").children[0].src = "icons/skills11.png";
-				document.getElementById("my-work").children[0].src = "icons/mywork11.png";
-				document.getElementById("contact").children[0].src = "icons/contact11.png";
+				document.getElementById("home").children[0].src = "icons/Home.png";
+				document.getElementById("about").children[0].src = "icons/About.png";
+				document.getElementById("skills").children[0].src = "icons/Skills.png";
+				document.getElementById("my work").children[0].src = "icons/My work.png";
+				document.getElementById("contact").children[0].src = "icons/Contact.png";
 				}
 		});
-
 }
 
 
@@ -299,6 +313,5 @@ for (var i = 0; i < navLine.length; i++) {
 
 
 
-		console.log(2+3);
 
 

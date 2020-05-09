@@ -6,15 +6,31 @@ body  {
 	.container {
 		width: 100%;
 		height: 100vh;
+		/*background: url("../img/codeBackground-mob.png");
+		background-size: cover;*/
 		background-color: #1f1f1f;
 		color: #fff;
 		overflow: hidden;
 		max-height: 100%;
 		max-width: 100%; 
 
+		.home-page-contact {
+					width: 70%;
+					margin-left: 15%;
+					position: absolute;
+					bottom: 5%;
+					z-index: 10;
+					img {
+						width: 15%;
+						margin: 0 5%;
+						float: left;
+					}
+			}
+
 		.heading {
 			height: 10%;
 			background-color: #181818;
+			opacity: 1;
 			.heading-logo {
 				width: 12%;
 				float: left;
@@ -25,7 +41,6 @@ body  {
 				width: 27px;
 				margin: 23.5px 15px 0 0;
 				float: right;
-				transition: 0.3s;
 				.ham-line {
 					width: 100%;
 					height: 1px;
@@ -56,14 +71,13 @@ body  {
 			}
 		}
 		.vm {
-			background: url("../img/logo-black-256.png");
+			background: url("../img/logo-black.png");
 			background-size: cover;
 			position: absolute;
 			bottom: 18%;
 			animation: opacity 4s infinite;
 			opacity: 20%;
 			z-index: 1;
-
 		}
 		@keyframes opacity {
 			0% {opacity: 2%;}
@@ -73,20 +87,20 @@ body  {
 
 /*navigatin bar*/
 		.nav-bar {
-			width: 0;
-			height: 7%;
+			width: 100%;
+			margin-left: 100%;
 			background-color: #181818;
-			float: right;
 			overflow: hidden;
 			.nav-line {
 				width: 19%;
 				display: inline-block;
 				text-align: center;
-				margin-top: 3%;
+				padding: 3% 0;
 				img {
 					width: 30%;
-					opacity: 0;	
-					/*display: none;*/
+				}
+				p {
+					display: none;
 				}
 			}
 		}
@@ -99,23 +113,15 @@ body  {
 			color: #fff;
 			width: 100%;
 			height: 100%;
-			.home-page-contact {
-					width: 70%;
-					margin-left: 15%;
-					position: absolute;
-					bottom: 5%;
-					z-index: 10;
-					img {
-						width: 15%;
-						margin: 0 5%;
-						float: left;
-					}
-			}
+			z-index: 20;
+			
 			/*lasnding page content*/
 			.home-page-content {
 				top: 40%;
 				left: 5%;
 				position: absolute;
+				z-index: 100;
+				color: #fff;
 				.name {
 					display: none;
 					font: 400 3rem 'Do Hyeon', sans-serif;
@@ -152,7 +158,7 @@ body  {
 
 			.page-title {
 				font: 200 2rem 'Open Sans', sans-serif;
-				margin: 15% 0 0 5%;
+				margin: 5% 0 0 5%;
 				color: #69C9CF;
 				opacity: 0;
 				transition: 0.5s;
@@ -164,6 +170,7 @@ body  {
 				.about-first-paragraph, .about-second-paragraph, .about-third-paragraph {
 					width: 80%;
 					font: 200 0.9rem 'Open Sans', sans-serif;
+
 					/*text-shadow: -8px 5px 1px #000;*/
 				}
 				.about-first-paragraph {
@@ -179,7 +186,7 @@ body  {
 					transition: 1s;
 				}
 				.about-my-image {
-					position: absolute;
+					position: fixed;
 					bottom: 0;
 					right: -80%;
 					transition: 1s;
@@ -199,7 +206,7 @@ body  {
 					width: 120%;
 					margin: 1% 0 0 105%;
 					border-radius: 100%;
-					animation: spin 20s infinite;
+					animation: spin 20s infinite linear;
 					transition: 1s;
 					.skill-icon {
 						width: 20%;
@@ -208,40 +215,56 @@ body  {
 						margin: 40% 0 0 0;
 						transform: rotate(-90deg);
 						float: left;
+						background: url("../icons/html5.png");
+						background-size: cover;	
 					}
 					.css-icon {
 						margin: 12% 0 0 -9%;
 						transform: rotate(-45deg);
 						float: left;
+						background: url("../icons/css3.png");
+						background-size: cover;	
 					}
 					.java-script-icon {
 						margin: 0 0 0 10%;
 						float: left;
+						background: url("../icons/javaScript.png");
+						background-size: cover;	
 					}
 					.sass-icon {
 						margin: 14% 0 0 10%;
 						transform: rotate(50deg);
 						float: left;
+						background: url("../icons/sass.png");
+						background-size: cover;	
 					}
 					.jquery-icon {
 						margin: 6% 0 0 0;
 						transform: rotate(90deg);
 						float: right;
+						background: url("../icons/jquery.png");
+						background-size: cover;	
 					}
 					.ps-icon {
 						margin: 33% -7% 0 0;
 						transform: rotate(133deg);
 						float: right;
+						background: url("../icons/ps.png");
+						background-size: cover;	
 					}
 					.ai-icon {
 						margin: 45% 8% 0 0;
 						transform: rotate(-180deg);
 						float: right;
+						background: url("../icons/ai.png");
+						background-size: cover;	
 					}
 					.xd-icon {
 						margin: 7% 8% 0 0;
 						transform: rotate(-133deg);
 						float: right;
+						background: url("../icons/xd.png");
+						background-size: cover;	
 					}
 				}
 				@keyframes spin {
@@ -259,11 +282,6 @@ body  {
 					img {
 						width: 100%;
 						}
-					h1 {
-						font: 200 0.9rem 'Open Sans', sans-serif;
-						color: #fff;
-						text-align: center;
-					}
 				}
 				.blomm {
 					margin: 10% 0 0 -100%;

@@ -6,6 +6,8 @@ body {
   body .container {
     width: 100%;
     height: 100vh;
+    /*background: url("../img/codeBackground-mob.png");
+    background-size: cover;*/
     background-color: #1f1f1f;
     color: #fff;
     overflow: hidden;
@@ -13,9 +15,20 @@ body {
     max-width: 100%;
     /*navigatin bar*/
     /*landing page letters*/ }
+    body .container .home-page-contact {
+      width: 70%;
+      margin-left: 15%;
+      position: absolute;
+      bottom: 5%;
+      z-index: 10; }
+      body .container .home-page-contact img {
+        width: 15%;
+        margin: 0 5%;
+        float: left; }
     body .container .heading {
       height: 10%;
-      background-color: #181818; }
+      background-color: #181818;
+      opacity: 1; }
       body .container .heading .heading-logo {
         width: 12%;
         float: left;
@@ -24,8 +37,7 @@ body {
         height: 15px;
         width: 27px;
         margin: 23.5px 15px 0 0;
-        float: right;
-        transition: 0.3s; }
+        float: right; }
         body .container .heading .ham-but .ham-line {
           width: 100%;
           height: 1px;
@@ -47,7 +59,7 @@ body {
           transform: rotate(-45deg);
           top: 7px; }
     body .container .vm {
-      background: url("../img/logo-black-256.png");
+      background: url("../img/logo-black.png");
       background-size: cover;
       position: absolute;
       bottom: 18%;
@@ -62,43 +74,35 @@ body {
   100% {
     opacity: 2%; } }
     body .container .nav-bar {
-      width: 0;
-      height: 7%;
+      width: 100%;
+      margin-left: 100%;
       background-color: #181818;
-      float: right;
       overflow: hidden; }
       body .container .nav-bar .nav-line {
         width: 19%;
         display: inline-block;
         text-align: center;
-        margin-top: 3%; }
+        padding: 3% 0; }
         body .container .nav-bar .nav-line img {
-          width: 30%;
-          opacity: 0;
-          /*display: none;*/ }
+          width: 30%; }
+        body .container .nav-bar .nav-line p {
+          display: none; }
     body .container .content {
       color: #fff;
       width: 100%;
       height: 100%;
+      z-index: 20;
       /*lasnding page content*/
       /*about page content*/
       /*skills page content*/
       /*my work page content*/
       /*contact page content*/ }
-      body .container .content .home-page-contact {
-        width: 70%;
-        margin-left: 15%;
-        position: absolute;
-        bottom: 5%;
-        z-index: 10; }
-        body .container .content .home-page-contact img {
-          width: 15%;
-          margin: 0 5%;
-          float: left; }
       body .container .content .home-page-content {
         top: 40%;
         left: 5%;
-        position: absolute; }
+        position: absolute;
+        z-index: 100;
+        color: #fff; }
         body .container .content .home-page-content .name {
           display: none;
           font: 400 3rem 'Do Hyeon', sans-serif; }
@@ -126,7 +130,7 @@ body {
     opacity: 0%; } }
       body .container .content .page-title {
         font: 200 2rem 'Open Sans', sans-serif;
-        margin: 15% 0 0 5%;
+        margin: 5% 0 0 5%;
         color: #69C9CF;
         opacity: 0;
         transition: 0.5s; }
@@ -146,7 +150,7 @@ body {
           margin: 7% 0 0 -80%;
           transition: 1s; }
         body .container .content .about-page .about-my-image {
-          position: absolute;
+          position: fixed;
           bottom: 0;
           right: -80%;
           transition: 1s;
@@ -163,41 +167,57 @@ body {
           width: 120%;
           margin: 1% 0 0 105%;
           border-radius: 100%;
-          animation: spin 20s infinite;
+          animation: spin 20s infinite linear;
           transition: 1s; }
           body .container .content .skills-page .skills-icons-wrap .skill-icon {
             width: 20%; }
           body .container .content .skills-page .skills-icons-wrap .html-icon {
             margin: 40% 0 0 0;
             transform: rotate(-90deg);
-            float: left; }
+            float: left;
+            background: url("../icons/html5.png");
+            background-size: cover; }
           body .container .content .skills-page .skills-icons-wrap .css-icon {
             margin: 12% 0 0 -9%;
             transform: rotate(-45deg);
-            float: left; }
+            float: left;
+            background: url("../icons/css3.png");
+            background-size: cover; }
           body .container .content .skills-page .skills-icons-wrap .java-script-icon {
             margin: 0 0 0 10%;
-            float: left; }
+            float: left;
+            background: url("../icons/javaScript.png");
+            background-size: cover; }
           body .container .content .skills-page .skills-icons-wrap .sass-icon {
             margin: 14% 0 0 10%;
             transform: rotate(50deg);
-            float: left; }
+            float: left;
+            background: url("../icons/sass.png");
+            background-size: cover; }
           body .container .content .skills-page .skills-icons-wrap .jquery-icon {
             margin: 6% 0 0 0;
             transform: rotate(90deg);
-            float: right; }
+            float: right;
+            background: url("../icons/jquery.png");
+            background-size: cover; }
           body .container .content .skills-page .skills-icons-wrap .ps-icon {
             margin: 33% -7% 0 0;
             transform: rotate(133deg);
-            float: right; }
+            float: right;
+            background: url("../icons/ps.png");
+            background-size: cover; }
           body .container .content .skills-page .skills-icons-wrap .ai-icon {
             margin: 45% 8% 0 0;
             transform: rotate(-180deg);
-            float: right; }
+            float: right;
+            background: url("../icons/ai.png");
+            background-size: cover; }
           body .container .content .skills-page .skills-icons-wrap .xd-icon {
             margin: 7% 8% 0 0;
             transform: rotate(-133deg);
-            float: right; }
+            float: right;
+            background: url("../icons/xd.png");
+            background-size: cover; }
 @keyframes spin {
   100% {
     transform: rotate(360deg); } }
@@ -210,10 +230,6 @@ body {
           transition: 1s; }
           body .container .content .my-work-page .blomm img, body .container .content .my-work-page .nice img {
             width: 100%; }
-          body .container .content .my-work-page .blomm h1, body .container .content .my-work-page .nice h1 {
-            font: 200 0.9rem 'Open Sans', sans-serif;
-            color: #fff;
-            text-align: center; }
         body .container .content .my-work-page .blomm {
           margin: 10% 0 0 -100%; }
         body .container .content .my-work-page .nice {

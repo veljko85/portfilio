@@ -1,340 +1,125 @@
 @media screen and (min-width: 768px)  and (max-width: 1024px){
-body  {
-	header {
-		height: 100px;
-		.logo {
-			width: 80px;
-			margin-top: 10px;
-		}
-		.ham-but {
-			margin: 42.5px 20px 0 0;
-		}
-	}
-	.nav {
-		.logo-nav {
-			width: 100px;
-			margin-top: 50px;
-		}
-		.nav-list {
-			margin-top: 100px;
-		}
-		.usluge-show {
-			width: 55px;
-			height: 65px;
-			img {
-				margin-top: 27.5px;
+	body  {
+		.container {
+			.home-page-contact {
+				width: 50%;
+				margin-left: 25%;
 			}
-		}
-		a {
-			font: 400 30px 'Open Sans', sans-serif;
-		}
-		li {
-			padding: 25px 0;
-		}
-		.proslave-show {
-			width: 55px;
-			height: 65px;
-			img {
-				margin-top: 27.5px;
+			.heading {
+				.heading-logo {
+					width: 9%;
+					margin: 2.5% 0 2.5% 45.5%;
+				}
+				.ham-but {
+					margin: 6% 25px 0 0;
+				}
 			}
-		}
-		.nav-footer {
-			.social {
-				width: 80px;
-				a {
-					width: 25px;
+			.vm {
+				margin-left: 10%;
+			}
+
+	/*navigatin bar*/
+			.nav-bar {
+				margin-top: -0.7%;
+				.nav-line {
+					width: 19.5%;
+					margin-top: 2%;
 					img {
-						width: 25px;
+						width: 25%;
 					}
 				}
 			}
-		}
-	}
-	.main-container {
-	    
 
-		/* ABOUT US */
+	/*landing page letters*/
 
-		.about-us {
-			.img-container {
-				display: inline-block;
-				margin-left: 30px;
-			}
-			.about-us-info-container {
-				width: 350px;
-				margin: 50px 0 0 30px;
-				display: inline-block;
-			}
-		}
-				/* CONTACT */
+			.content {
 
-		.contact {
-			.img-container {
-				display: inline-block;
-				margin-left: 30px;
-			}
-			.contact-main-line {
-				width: 350px;
-				margin: 50px 0 0 30px;
-				display: inline-block;
-				display: none;
-			}
-			.contact-text {
-				width: 350px;
-				margin: 50px 0 0 30px;
-				display: inline-block;
-				padding: 0;
-			}
-			.contact-info-container {
-				width: 90%;
-				padding: 0 0 50px 10%;
-				.cont-info {
-					width: 45%;
-					display: inline-block;
+	/*lasnding page content*/
+				.home-page-content {
+					.name {
+						font: 400 5rem 'Do Hyeon', sans-serif;
+					}
+					.name-2 {
+						font: 400 5rem 'Do Hyeon', sans-serif;
+					}
+
+					.last-name {
+						font: 400 5rem 'Do Hyeon', sans-serif;
+					}
+					.last-name-2 {
+						font: 400 5rem 'Do Hyeon', sans-serif;
+					}
+
+					.web-developer {
+						font: 400 5rem 'Do Hyeon', sans-serif;
+					}
+					.web-developer-2 {
+						font: 400 5rem 'Do Hyeon', sans-serif;
+					}
+					.flashing {
+						font: 400 5rem 'Do Hyeon', sans-serif;
+					}
+				}
+
+				.page-title {
+					font: 200 3rem 'Open Sans', sans-serif;
+					margin: 5% 0 0 5%;
+				}
+
+				/*about page content*/
+				.about-page {
+					.about-first-paragraph, .about-second-paragraph, .about-third-paragraph {
+						font: 200 1.5rem 'Open Sans', sans-serif;
+					}
+					.about-first-paragraph {
+						margin: 3% 0 0 -80%;
+					}
+					.about-second-paragraph {
+						margin: 3% 0 0 100%;
+					}
+					.about-third-paragraph {
+						margin: 3% 0 0 -80%;
+					}
+				}
+				/*skills page content*/
+				.skills-page {
+					.skills-first-paragraph, .skills-second-paragraph, .skills-third-paragraph {
+						font: 200 1.5rem 'Open Sans', sans-serif;
+					}
+					.skills-icons-wrap {
+						width: 100%;
+					}
+				}
+				/*my work page content*/
+				.my-work-page {
+					.blomm, .nice, {
+						width: 60%;
+						img {
+							width: 100%;
+							}
+					}
+					.blomm {
+						margin: 5% 0 0 -100%;
+					}
+					.nice {
+						margin: 3% 0 0 105%;
+					}
+				}
+				/*contact page content*/
+				.contact-page {
+					.contact-first-paragraph, .contact-second-paragraph {
+						font: 200 1.5rem 'Open Sans', sans-serif;
+					}
+					.email, .tel, .link, .insta {
+						p {
+							font: 200 1.2rem 'Open Sans', sans-serif;
+
+						}
+					}
 				}
 			}
-		}
-
-		/* GALERIJA */
-
-		.galerija {
-
-			.galerija-slike {
-				.gal-img-container {
-					height: 150px;
-				}
-				
-			}
-		}
-
-		/*USLUGE CLASSE ZA EXTEND*/
-
-		.usluge-tab {
-			width: 100%;
-			background-color: #162027;
-			text-align: center;
-		}
-		.usluge-head-tab {
-			width: 100%;
-			background-color: #162027;
-			padding: 100px 0 10px 0;
-			img {
-				width: 130px;
-				padding: 30px;
-			}
-		}
-		.usluge-img-container-tab {
-			-webkit-background-size: cover;
-			background-size: cover;
-			background-position: center;
-			height: 400px;
-			h2 {
-				font: 500 40px 'Open Sans', sans-serif;
-				color: #fff;
-				padding-top: 15%;
-			}
-			img {
-				width: 80px;
-			}
-		}
-
-		.usluge-info-tab {
-			width: 90%;
-			background-color: #162027;
-			text-align: left;
-			color: #fff;
-			margin: 0 auto;
-			padding-bottom: 30px;
-			h5 {
-				font: 400 25px 'Open Sans', sans-serif;
-				margin-left: 10px;
-			}
-			p {
-				font: 400 17px 'Open Sans', sans-serif;
-			}
-		}
-		.usluge-slike-tab {
-			width: 96%;
-			background-color: #fff;
-			padding: 20px 2% 20px 2%;
-		}
-		.usluge-gal-img-container-tab {
-			width: 32%;
-			height: 250px;
-			-webkit-background-size: cover;
-			background-size: cover;
-			background-position: center;
-			display: inline-block;
-			margin-bottom: 10px;
-		}
-
-		.vencanja {
-			@extend .usluge-tab;
-			.vencanja-head {
-				@extend .usluge-head-tab;
-				.img-container {
-					background-image: url(../img/vencanje-mob.jpg);
-					@extend .usluge-img-container-tab;
-				}
-			}
-			.vencanja-info {
-				@extend .usluge-info-tab;
-			}
-			.vencanja-slike {
-				@extend .usluge-slike-tab;
-				.ven-img-container {
-					@extend .usluge-gal-img-container-tab;
-				}
-			}
-		}
-
-		/* RODJENDANI*/
-
-		.rodjendani {
-			@extend .usluge-tab;
-			.rodjendani-head {
-				@extend .usluge-head-tab;
-				.img-container {
-					background-image: url(../img/rodjendani1.jpg);
-					@extend .usluge-img-container-tab;
-				}
-			}
-			.rodjendani-info {
-				@extend .usluge-info-tab;
-			}
-			.rodjendani-slike {
-				@extend .usluge-slike-tab;
-				.rodj-img-container {
-					@extend .usluge-gal-img-container-tab;
-				}
 			
-			}
+
 		}
-
-		/* DOGADJAJI*/
-
-		.dogadjaji {
-			@extend .usluge-tab;
-			.dogadjaji-head {
-				@extend .usluge-head-tab;
-				.img-container {
-					background-image: url(../img/dogadjaji.jpg);
-					@extend .usluge-img-container-tab;
-				}
-			}
-			.dogadjaji-info {
-				@extend .usluge-info-tab;
-			}
-			.dogadjaji-slike {
-				@extend .usluge-slike-tab;
-				.dog-img-container {
-					@extend .usluge-gal-img-container-tab;
-				}
-			}
-		}
-		/*BUKETI*/
-		.buketi {
-			@extend .usluge-tab;
-			.buketi-head {
-				@extend .usluge-head-tab;
-				.img-container {
-					background-image: url(../img/buket3.jpg);
-					@extend .usluge-img-container-tab;
-				}
-			}
-			.buketi-info {
-				@extend .usluge-info-tab;
-			}
-			.buketi-slike {
-				@extend .usluge-slike-tab;
-				.buketi-con{
-					width: 32%;
-					display: inline-block;
-					p {
-						font: 600 15px 'Open Sans', sans-serif;
-						color: #000;
-						margin-bottom: 30px;
-					}
-
-					.buk-img-container {
-						@extend .usluge-gal-img-container-tab;
-						margin-bottom: 10px;
-						width: 100%;
-					}
-				}
-			}
-		}
-		/*BOX*/
-		.box {
-			@extend .usluge-tab;
-			.box-head {
-				@extend .usluge-head-tab;
-				.img-container {
-					background-image: url(../img/box.jpg);
-					@extend .usluge-img-container-tab;
-				}
-			}
-			.box-info {
-				@extend .usluge-info-tab;
-			}
-			.box-slike {
-				@extend .usluge-slike-tab;
-				.box-con{
-					width: 32%;
-					display: inline-block;
-					p {
-						font: 600 15px 'Open Sans', sans-serif;
-						color: #000;
-						margin-bottom: 30px;
-					}
-					.box-img-container {
-						@extend .usluge-gal-img-container-tab;
-						margin-bottom: 10px;
-						width: 100%;
-					}
-				}
-			}
-		}
-
-
-
-
-		/*USLUGE FOOTER*/
-		.template-footer {
-
-				.foot-cont-info {
-
-
-					.foot-info {
-
-						img {
-							width: 30px;
-						}
-						span {
-							font: 600 18px 'Open Sans', sans-serif;
-
-						}
-					}
-				}
-				.social-in-template {
-					width: 100px;
-
-					a {
-						width: 30px;
-
-						img {
-							width: 30px;
-						}
-					}
-
-				}
-				p {
-					text-align: center;
-				}
-			}
 	}
-
 }
-
-
-}	
