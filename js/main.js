@@ -110,7 +110,7 @@ for (var i = 0; i < webDeveloper.length; i++) {
 	setTimeout('webDeveloper[14].style.display = "inline";', 6500);
 }
 
-//nav bar change on clicks
+//nav bar change page on clicks
 for (var i = 0; i < navLine.length; i++) {
 	navLine[i].addEventListener("click", function() {
 
@@ -255,6 +255,7 @@ for (var i = 0; i < navLine.length; i++) {
 			}
 		}
 
+		//change icons on nav bar
 		switch (this.id) {
 			case "home":
 				this.children[0].src = "icons/Homeon.png";
